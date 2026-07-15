@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Pixel cat chasing a security bug</title>
+  <desc id="desc">An animated neon cat patrols a circuit board while chasing a software bug.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#03040a"/><stop offset=".5" stop-color="#11162a"/><stop offset="1" stop-color="#03040a"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00f5d4"/><stop offset=".5" stop-color="#8338ec"/><stop offset="1" stop-color="#ff006e"/></linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="190" rx="18" fill="url(#bg)"/>
+  <path d="M0 132h180l25-25h120l18 18h160l25-36h130l22 43h180l28-28h126l26 28h180" fill="none" stroke="url(#line)" stroke-width="3" filter="url(#glow)" stroke-dasharray="18 12">
+    <animate attributeName="stroke-dashoffset" from="0" to="-120" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <g fill="#00f5d4" filter="url(#glow)">
+    <circle cx="204" cy="107" r="4"><animate attributeName="r" values="2;6;2" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="528" cy="89" r="4"><animate attributeName="r" values="6;2;6" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="888" cy="104" r="4"><animate attributeName="opacity" values=".2;1;.2" dur=".8s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="28" y="38" fill="#8b949e" font-family="monospace" font-size="14" letter-spacing="3">PATROL://ATTACK_SURFACE</text>
+  <text x="1170" y="38" fill="#00f5d4" text-anchor="end" font-family="monospace" font-size="14">BUG DETECTED</text>
+  <g shape-rendering="crispEdges">
+    <animateTransform attributeName="transform" type="translate" from="-190 55" to="1230 55" dur="6.4s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur=".28s" repeatCount="indefinite"/>
+      <path d="M20 53C-12 27-5 2 6 18c10 13 17 18 33 20" fill="none" stroke="#8338ec" stroke-width="10">
+        <animate attributeName="d" values="M20 53C-12 27-5 2 6 18c10 13 17 18 33 20;M20 53C-8 55-20 29 0 29c15 1 20 7 39 9;M20 53C-12 27-5 2 6 18c10 13 17 18 33 20" dur=".56s" repeatCount="indefinite"/>
+      </path>
+      <rect x="25" y="35" width="67" height="39" rx="9" fill="#8338ec"/>
+      <path d="M76 35l10-20 10 23M92 37l18-17 1 30" fill="#8338ec"/>
+      <rect x="82" y="35" width="38" height="34" rx="8" fill="#9b5de5"/>
+      <circle cx="107" cy="46" r="3" fill="#00f5d4"><animate attributeName="r" values="3;1;3" dur="2s" repeatCount="indefinite"/></circle>
+      <path d="M118 54h19M117 59h22" stroke="#ff006e" stroke-width="2"/>
+      <rect x="33" y="70" width="11" height="27" fill="#9b5de5"><animateTransform attributeName="transform" type="rotate" values="28 38 72;-34 38 72;28 38 72" dur=".28s" repeatCount="indefinite"/></rect>
+      <rect x="62" y="70" width="11" height="27" fill="#8338ec"><animateTransform attributeName="transform" type="rotate" values="-30 67 72;30 67 72;-30 67 72" dur=".28s" repeatCount="indefinite"/></rect>
+      <rect x="82" y="69" width="10" height="25" fill="#9b5de5"><animateTransform attributeName="transform" type="rotate" values="24 87 71;-27 87 71;24 87 71" dur=".28s" repeatCount="indefinite"/></rect>
+    </g>
+    <g transform="translate(175 44)" filter="url(#glow)">
+      <ellipse cx="0" cy="17" rx="17" ry="13" fill="#ff006e"/>
+      <circle cx="-7" cy="8" r="5" fill="#ff006e"/>
+      <circle cx="7" cy="8" r="5" fill="#ff006e"/>
+      <path d="M-14 15l-17-9M-15 22l-18 7M14 15l17-9M15 22l18 7" stroke="#ff006e" stroke-width="4">
+        <animate attributeName="stroke-width" values="2;5;2" dur=".3s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="-6" cy="16" r="2" fill="#03040a"/><circle cx="6" cy="16" r="2" fill="#03040a"/>
+    </g>
+  </g>
+</svg>
