@@ -43,17 +43,7 @@ research : Web/API Security // Firmware & Boot Chains // CTF
 - `FIRMWARE` -- C, boot-chain, parser, and binary-format attack-surface research
 - `DISCLOSURE` -- responsible reporting, remediation-oriented validation, and security advisory lifecycle
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/matrix-terminal.svg" width="960" alt="Animated vulnerability research terminal" />
-</p>
-
-## `> shipped_projects`
-
-### [`12PDF Edit`](https://12pdfedit.netlify.app/)
-
-Browser-based PDF editing tool built for fast, accessible document workflows.
-
-`WEB APPLICATION` // `PDF WORKFLOW` // `PRODUCT BUILD`
+## `> featured_delivery`
 
 ### `TBM AI Program`
 
@@ -123,3 +113,11 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 <sub>&#9888; BUILD WITH CARE // REVIEW IN PUBLIC // SHIP SECURELY &#9888;</sub>
 
 </div>
+
+## `> side_projects`
+
+### [`12PDF Edit`](https://12pdfedit.netlify.app/)
+
+Browser-based PDF editing tool built for fast, accessible document workflows.
+
+`WEB APPLICATION` // `PDF WORKFLOW` // `PRODUCT BUILD`
