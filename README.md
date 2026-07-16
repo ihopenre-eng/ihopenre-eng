@@ -14,26 +14,9 @@
   <img src="https://img.shields.io/badge/RESEARCH-FIRMWARE%20%26%20TRUST%20BOUNDARIES-f4a261?style=for-the-badge&labelColor=0d1117" alt="Firmware and trust-boundary research" />
 </p>
 
-<h3>&#51060;&#49457;&#54788; <code>lshdf</code> // Security-minded Software Engineer &amp; OSS Contributor</h3>
-
 </div>
 
 <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pixel-patrol.svg" width="100%" alt="Animated pixel cat chasing a software bug" />
-
-## `> identity`
-
-```text
-+--[lshdf@ihopenre-eng]--[~/security-lab]
-+--$ id
-
-name     : Lee Seonghyeon
-alias    : lshdf
-handle   : ihopenre-eng
-focus    : AppSec // OSS Engineering // Developer Tooling
-practice : AuthN/AuthZ // API Trust Boundaries // Secure Defaults
-delivery : Docker/CI Hardening // Reviewable Changes // Automation
-research : Web/API Security // Firmware & Boot Chains // CTF
-```
 
 ## `> current_contributions`
 
