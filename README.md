@@ -43,7 +43,23 @@ research : Web/API Security // Firmware & Boot Chains // CTF
 - `FIRMWARE` -- C, boot-chain, parser, and binary-format attack-surface research
 - `DISCLOSURE` -- responsible reporting, remediation-oriented validation, and security advisory lifecycle
 
-<img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/matrix-terminal.svg" width="100%" alt="Animated vulnerability research terminal" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/matrix-terminal.svg" width="960" alt="Animated vulnerability research terminal" />
+</p>
+
+## `> shipped_projects`
+
+### [`12PDF Edit`](https://12pdfedit.netlify.app/)
+
+Browser-based PDF editing tool built for fast, accessible document workflows.
+
+`WEB APPLICATION` // `PDF WORKFLOW` // `PRODUCT BUILD`
+
+### `TBM AI Program`
+
+AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Maintenance partner.
+
+`CLIENT DELIVERY` // `AI PROGRAM DEVELOPMENT` // `CERTIFICATE OF DEVELOPMENT · JUNE 2026`
 
 ## `> open_source_prs`
 
