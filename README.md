@@ -44,11 +44,19 @@ research : Web Security // CTF // Vulnerability Research
 
 ## `> open_source_prs`
 
+<!-- OSS-PRS:START -->
 | Project | Contribution | Status |
 | :-- | :-- | :-- |
 | [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy/pull/3474) | docs: clarify the default nginx split-cookie example | Open |
 | [OpenFGA](https://github.com/openfga/openfga/pull/3209) | lint: enable `makezero` and fix existing violations | Open |
 | [Hatchet](https://github.com/hatchet-dev/hatchet/pull/4441) | docs(security): harden production Docker Compose defaults | Open |
+<!-- OSS-PRS:END -->
+
+## `> security_credits`
+
+<!-- SECURITY-CREDITS:START -->
+_No public GitHub Advisory credits detected yet. This section updates automatically._
+<!-- SECURITY-CREDITS:END -->
 
 ## `> arsenal`
 
