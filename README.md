@@ -39,14 +39,14 @@ AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Mai
 <!-- OSS-PRS:START -->
 | Project | Contribution | Status |
 | :-- | :-- | :-- |
+| [crossplane/cli](https://github.com/crossplane/cli/pull/197) | validate: Recognize Kubernetes built-in resources | Open |
+| [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns/pull/6567) | fix(rfc2136): clear stale AXFR errors after fallback | Open |
 | [traefik/traefik-helm-chart](https://github.com/traefik/traefik-helm-chart/pull/1933) | fix(ports): support IPv6 hostIP values | Open |
 | [dapr/dapr](https://github.com/dapr/dapr/pull/10215) | fix: preserve sub-millisecond latency precision | Open |
-| [grafana/docker-otel-lgtm](https://github.com/grafana/docker-otel-lgtm/pull/1596) | fix: prevent interactive shutdown hangs | Open |
+| [grafana/docker-otel-lgtm](https://github.com/grafana/docker-otel-lgtm/pull/1596) | fix: prevent interactive shutdown hangs | Merged |
 | [open-telemetry/opentelemetry-helm-charts](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317) | fix(kube-stack): grant leader election lease RBAC | Open |
 | [open-telemetry/opentelemetry-dotnet-contrib](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4769) | ci: verify semantic conventions generation | Open |
 | [openfga/dotnet-sdk](https://github.com/openfga/dotnet-sdk/pull/228) | fix: compare contextual tuples by value | Open |
-| [prometheus/graphite_exporter](https://github.com/prometheus/graphite_exporter/pull/346) | docs: expand metric mapping examples | Open |
-| [terrastruct/d2](https://github.com/terrastruct/d2/pull/2780) | textmeasure: prevent Unicode markdown labels from clipping | Open |
 <!-- OSS-PRS:END -->
 
 ## `> security_credits`
