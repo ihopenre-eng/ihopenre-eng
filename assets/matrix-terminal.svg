@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
-  <title id="title">Animated vulnerability research terminal</title>
-  <desc id="desc">A terminal with moving code rain, blinking cursor, scanning bar, and active research modules.</desc>
+  <title id="title">Animated OSS security engineering terminal</title>
+  <desc id="desc">A terminal with moving code rain, blinking cursor, scanning bar, and active secure contribution modules.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#05070d"/><stop offset="1" stop-color="#10041c"/></linearGradient>
     <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00f5d4"/><stop offset=".5" stop-color="#3a86ff"/><stop offset="1" stop-color="#ff006e"/></linearGradient>
@@ -10,24 +10,24 @@
   <rect width="1200" height="270" rx="18" fill="url(#bg)"/>
   <rect x="12" y="12" width="1176" height="246" rx="16" fill="none" stroke="#30363d"/>
   <circle cx="36" cy="34" r="6" fill="#ff006e"/><circle cx="56" cy="34" r="6" fill="#ffbe0b"/><circle cx="76" cy="34" r="6" fill="#00f5d4"/>
-  <text x="600" y="39" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">lshdf@sec-lab: ~/vulnerability-research</text>
+  <text x="600" y="39" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">lshdf@oss-lab: ~/secure-contributions</text>
   <g clip-path="url(#c)" fill="#00f5d4" font-family="monospace" font-size="11" opacity=".13">
     <text x="790" y="-20">0x41 0x42 0x43 101001<animate attributeName="y" from="-20" to="300" dur="4.1s" repeatCount="indefinite"/></text>
-    <text x="930" y="-90">SELECT UNION TRACE PWN<animate attributeName="y" from="-90" to="300" dur="5.6s" repeatCount="indefinite"/></text>
-    <text x="1060" y="-40">JWT SSRF XSS RCE IDOR<animate attributeName="y" from="-40" to="300" dur="4.8s" repeatCount="indefinite"/></text>
+    <text x="930" y="-90">GIT DIFF REVIEW TEST<animate attributeName="y" from="-90" to="300" dur="5.6s" repeatCount="indefinite"/></text>
+    <text x="1060" y="-40">AUTHZ CI LINT MERGE<animate attributeName="y" from="-40" to="300" dur="4.8s" repeatCount="indefinite"/></text>
   </g>
   <g font-family="monospace" font-size="17">
-    <text x="44" y="82" fill="#00f5d4">$ ./research --target web --mode authorized</text>
-    <text x="44" y="116" fill="#c9d1d9">[+] mapping trust boundaries</text>
-    <text x="44" y="148" fill="#c9d1d9">[+] tracing untrusted input</text>
-    <text x="44" y="180" fill="#c9d1d9">[+] validating exploitability</text>
-    <text x="44" y="212" fill="#ff4d9d">[!] objective: break assumptions, ship safer systems</text>
+    <text x="44" y="82" fill="#00f5d4">$ git checkout -b secure-defaults/pr-3474</text>
+    <text x="44" y="116" fill="#c9d1d9">[+] writing a focused, reviewable patch</text>
+    <text x="44" y="148" fill="#c9d1d9">[+] validating tests, lint, and docs</text>
+    <text x="44" y="180" fill="#c9d1d9">[+] responding to upstream review feedback</text>
+    <text x="44" y="212" fill="#ff4d9d">[!] objective: ship secure defaults developers trust</text>
     <rect x="640" y="199" width="11" height="19" fill="#00f5d4" filter="url(#glow)"><animate attributeName="opacity" values="1;0;1" dur=".9s" repeatCount="indefinite"/></rect>
   </g>
   <g font-family="monospace" font-size="14">
-    <text x="760" y="92" fill="#8b949e">XSS</text><rect x="812" y="80" width="290" height="10" rx="5" fill="#161b22"/><rect x="812" y="80" width="0" height="10" rx="5" fill="#00f5d4"><animate attributeName="width" values="0;245;245" dur="3s" repeatCount="indefinite"/></rect>
-    <text x="760" y="132" fill="#8b949e">SSRF</text><rect x="812" y="120" width="290" height="10" rx="5" fill="#161b22"/><rect x="812" y="120" width="0" height="10" rx="5" fill="#3a86ff"><animate attributeName="width" values="0;205;205" dur="3.7s" repeatCount="indefinite"/></rect>
-    <text x="760" y="172" fill="#8b949e">RCE</text><rect x="812" y="160" width="290" height="10" rx="5" fill="#161b22"/><rect x="812" y="160" width="0" height="10" rx="5" fill="#ff006e"><animate attributeName="width" values="0;270;270" dur="4.2s" repeatCount="indefinite"/></rect>
+    <text x="760" y="92" fill="#8b949e">PR</text><rect x="812" y="80" width="290" height="10" rx="5" fill="#161b22"/><rect x="812" y="80" width="0" height="10" rx="5" fill="#00f5d4"><animate attributeName="width" values="0;245;245" dur="3s" repeatCount="indefinite"/></rect>
+    <text x="760" y="132" fill="#8b949e">CI</text><rect x="812" y="120" width="290" height="10" rx="5" fill="#161b22"/><rect x="812" y="120" width="0" height="10" rx="5" fill="#3a86ff"><animate attributeName="width" values="0;205;205" dur="3.7s" repeatCount="indefinite"/></rect>
+    <text x="760" y="172" fill="#8b949e">SEC</text><rect x="812" y="160" width="290" height="10" rx="5" fill="#161b22"/><rect x="812" y="160" width="0" height="10" rx="5" fill="#ff006e"><animate attributeName="width" values="0;270;270" dur="4.2s" repeatCount="indefinite"/></rect>
   </g>
   <rect x="12" y="52" width="4" height="180" fill="url(#scan)" filter="url(#glow)"><animate attributeName="x" from="12" to="1184" dur="4s" repeatCount="indefinite"/></rect>
 </svg>
