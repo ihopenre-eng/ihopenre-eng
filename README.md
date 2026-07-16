@@ -116,6 +116,12 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 
 ## `> side_projects`
 
+### [`HAKCA`](https://hakca.vn/)
+
+Study cafe reservation platform built for booking flows, operational schedules, and customer-facing service workflows.
+
+`RESERVATION PLATFORM` // `WEB SERVICE` // `PRODUCT BUILD`
+
 ### [`12PDF Edit`](https://12pdfedit.netlify.app/)
 
 Browser-based PDF editing tool built for fast, accessible document workflows.
