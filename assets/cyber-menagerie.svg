@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-  <title id="title">ihopenre-eng animated cyber security city</title>
-  <desc id="desc">A neon cyber city with matrix rain, a flying drone, sparks, and a running fox.</desc>
+  <title id="title">ihopenre-eng animated OSS security engineering city</title>
+  <desc id="desc">A neon engineering city with matrix rain, a flying drone, sparks, a running fox, and a pull request delivery pipeline.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#03040a"/>
@@ -40,8 +40,8 @@
     <g fill="#00f5d4" font-family="monospace" font-size="12" opacity=".18">
       <text x="38" y="-20">01 00 11 10 01 11 00<animate attributeName="y" from="-20" to="390" dur="5.3s" repeatCount="indefinite"/></text>
       <text x="108" y="-80">7F 3C 90 4A 00 FF<animate attributeName="y" from="-80" to="410" dur="6.7s" repeatCount="indefinite"/></text>
-      <text x="1018" y="-50">sudo nmap trace exploit<animate attributeName="y" from="-50" to="400" dur="5.9s" repeatCount="indefinite"/></text>
-      <text x="1110" y="-120">CVE 0DAY PWN WEB<animate attributeName="y" from="-120" to="390" dur="7.1s" repeatCount="indefinite"/></text>
+      <text x="1018" y="-50">git diff --check &amp;&amp; make test<animate attributeName="y" from="-50" to="400" dur="5.9s" repeatCount="indefinite"/></text>
+      <text x="1110" y="-120">PR REVIEW CI GREEN MERGE<animate attributeName="y" from="-120" to="390" dur="7.1s" repeatCount="indefinite"/></text>
     </g>
 
     <g fill="#f0f6fc">
@@ -76,7 +76,7 @@
     </g>
 
     <g transform="translate(600 76)" text-anchor="middle">
-      <text y="0" fill="#8b949e" font-family="monospace" font-size="15" letter-spacing="4">ROOT@SEC-LAB // IDENTITY CONFIRMED</text>
+      <text y="0" fill="#8b949e" font-family="monospace" font-size="15" letter-spacing="4">OSS@SEC-ENG // CONTRIBUTION PIPELINE</text>
       <text y="72" fill="#f0f6fc" font-family="sans-serif" font-size="58" font-weight="900" letter-spacing="3">IHOPENRE-ENG</text>
       <text y="72" fill="#00f5d4" opacity=".55" font-family="sans-serif" font-size="58" font-weight="900" letter-spacing="3">
         IHOPENRE-ENG
@@ -88,7 +88,7 @@
         <animate attributeName="x" values="-90;-370;-370;-90" dur="4s" repeatCount="indefinite"/>
       </rect>
       <text y="132" fill="#00f5d4" font-family="monospace" font-size="20" letter-spacing="3">LEE SEONGHYEON // &#51060;&#49457;&#54788; // @LSHDF</text>
-      <text y="166" fill="#ff4d9d" font-family="monospace" font-size="16" letter-spacing="2">WEB SECURITY // CTF // VULNERABILITY RESEARCH</text>
+      <text y="166" fill="#ff4d9d" font-family="monospace" font-size="16" letter-spacing="2">AUTHN/AUTHZ // SECURE DEFAULTS // OSS PRS</text>
     </g>
 
     <g filter="url(#glow)">
