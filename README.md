@@ -9,8 +9,9 @@
 <p>
   <img src="https://img.shields.io/badge/LEE%20SEONGHYEON-%EC%9D%B4%EC%84%B1%ED%98%84-00f5d4?style=for-the-badge&labelColor=0d1117" alt="Lee Seonghyeon" />
   <img src="https://img.shields.io/badge/ALIAS-LSHDF-8338ec?style=for-the-badge&labelColor=0d1117" alt="lshdf" />
-  <img src="https://img.shields.io/badge/FOCUS-AUTHN%2FAUTHZ-ff006e?style=for-the-badge&labelColor=0d1117" alt="Authentication and authorization" />
+  <img src="https://img.shields.io/badge/FOCUS-WEB%20%26%20PRODUCT%20SECURITY-ff006e?style=for-the-badge&labelColor=0d1117" alt="Web and product security" />
   <img src="https://img.shields.io/badge/OSS-PR%20CONTRIBUTOR-3a86ff?style=for-the-badge&labelColor=0d1117" alt="Open source contributor" />
+  <img src="https://img.shields.io/badge/RESEARCH-FIRMWARE%20%26%20TRUST%20BOUNDARIES-f4a261?style=for-the-badge&labelColor=0d1117" alt="Firmware and trust-boundary research" />
 </p>
 
 <h3>&#51060;&#49457;&#54788; <code>lshdf</code> // Security-minded Software Engineer &amp; OSS Contributor</h3>
@@ -28,17 +29,19 @@
 name     : Lee Seonghyeon
 alias    : lshdf
 handle   : ihopenre-eng
-focus    : AuthN/AuthZ // Secure Defaults // Developer Tooling
-workflow : Build // Review // Secure // Ship
-research : Web Security // CTF // Vulnerability Research
+focus    : AppSec // OSS Engineering // Developer Tooling
+practice : AuthN/AuthZ // API Trust Boundaries // Secure Defaults
+delivery : Docker/CI Hardening // Reviewable Changes // Automation
+research : Web/API Security // Firmware & Boot Chains // CTF
 ```
 
 ## `> current_contributions`
 
-- `PR` -- shipping focused docs, lint, and secure-default improvements upstream
-- `AUTH` -- OAuth2 Proxy, OpenFGA, and production authorization patterns
-- `DEVSECOPS` -- secure Docker Compose defaults, CI, and reviewable changes
-- `RESEARCH` -- web security and CTF work that strengthens engineering judgment
+- `OSS` -- upstream PRs across docs, lint, tests, developer tooling, and secure defaults
+- `APPSEC` -- authentication/authorization flows, API trust boundaries, and tenant isolation
+- `DELIVERY` -- Docker Compose hardening, CI automation, and reviewable production changes
+- `FIRMWARE` -- C, boot-chain, parser, and binary-format attack-surface research
+- `DISCLOSURE` -- responsible reporting, remediation-oriented validation, and security advisory lifecycle
 
 <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/matrix-terminal.svg" width="100%" alt="Animated vulnerability research terminal" />
 
@@ -58,11 +61,19 @@ research : Web Security // CTF // Vulnerability Research
 _No public GitHub Advisory credits detected yet. This section updates automatically._
 <!-- SECURITY-CREDITS:END -->
 
-## `> arsenal`
+## `> operating_surface`
+
+| Track | Current practice |
+| :-- | :-- |
+| `Application Security` | AuthN/AuthZ · API trust boundaries · tenant isolation · secure object references |
+| `Open Source Engineering` | Focused upstream PRs · tests · docs · lint · developer tooling |
+| `Secure Delivery` | Docker Compose hardening · CI automation · configuration review |
+| `Embedded / Firmware` | C · boot-chain reasoning · parser and binary-format attack surfaces |
+| `Vulnerability Research` | Responsible disclosure · remediation validation · CTF problem solving |
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,go&theme=dark" alt="JavaScript, TypeScript, Python and Go" />
+<img src="https://skillicons.dev/icons?i=js,ts,python,go,c,docker,linux,githubactions&theme=dark" alt="JavaScript, TypeScript, Python, Go, C, Docker, Linux and GitHub Actions" />
 
 <br><br>
 
@@ -70,6 +81,10 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
 
 </div>
 
