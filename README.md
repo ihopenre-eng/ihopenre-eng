@@ -30,7 +30,7 @@ AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Mai
 | [traefik/traefik-helm-chart](https://github.com/traefik/traefik-helm-chart/pull/1933) | fix(ports): support IPv6 hostIP values | Merged |
 | [dapr/dapr](https://github.com/dapr/dapr/pull/10215) | fix: preserve sub-millisecond latency precision | Merged |
 | [grafana/docker-otel-lgtm](https://github.com/grafana/docker-otel-lgtm/pull/1596) | fix: prevent interactive shutdown hangs | Merged |
-| [open-telemetry/opentelemetry-helm-charts](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317) | fix(kube-stack): grant leader election lease RBAC | Open |
+| [open-telemetry/opentelemetry-helm-charts](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317) | fix(kube-stack): grant leader election lease RBAC | Merged |
 <!-- OSS-PRS:END -->
 
 ## `> security_credits`
