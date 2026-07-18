@@ -4,21 +4,9 @@
 
 <sub>Lee Seonghyeon · Security Research · OSS Engineering · Product Development</sub>
 
-<br><br>
-
-<a href="https://hakca.vn/">HAKCA</a> · <a href="https://12pdfedit.netlify.app/">12PDF Edit</a> · <a href="https://velog.io/@ihopenre-eng/posts">Velog</a>
-
 </div>
 
 ---
-
-## `> featured_delivery`
-
-### `TBM AI Program`
-
-AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Maintenance partner.
-
-`CLIENT DELIVERY` // `AI PROGRAM DEVELOPMENT` // `CERTIFICATE OF DEVELOPMENT · JUNE 2026`
 
 ## `> open_source_prs`
 
@@ -54,3 +42,17 @@ Study cafe reservation platform built for booking flows, operational schedules, 
 Browser-based PDF editing tool built for fast, accessible document workflows.
 
 `WEB APPLICATION` // `PDF WORKFLOW` // `PRODUCT BUILD`
+
+## `> featured_delivery`
+
+### `TBM AI Program`
+
+AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Maintenance partner.
+
+`CLIENT DELIVERY` // `AI PROGRAM DEVELOPMENT` // `CERTIFICATE OF DEVELOPMENT · JUNE 2026`
+
+<div align="center">
+
+<a href="https://hakca.vn/">HAKCA</a> · <a href="https://12pdfedit.netlify.app/">12PDF Edit</a> · <a href="https://velog.io/@ihopenre-eng/posts">Velog</a>
+
+</div>
