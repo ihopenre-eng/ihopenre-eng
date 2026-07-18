@@ -1,6 +1,5 @@
-<div align="center"><h2>lshdf</h2><sub>Lee Seonghyeon · Security Research · OSS Engineering · Product Development</sub>
-
-</div>
+<h2 align="center">lshdf</h2>
+<p align="center"><sub>Lee Seonghyeon · Security Research · OSS Engineering · Product Development</sub></p>
 
 ---
 
