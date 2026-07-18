@@ -12,6 +12,7 @@
 <!-- OSS-PRS:START -->
 | Project | Contribution | Status |
 | :-- | :-- | :-- |
+| [ihopenre-eng/ihopenre-eng](https://github.com/ihopenre-eng/ihopenre-eng/pull/2) | chore: YOLO achievement 조건 검증 | Merged |
 | [openchoreo/openchoreo](https://github.com/openchoreo/openchoreo/pull/4223) | fix(controller): watch observability plane changes | Open |
 | [alpha-omega-security/scrutineer](https://github.com/alpha-omega-security/scrutineer/pull/655) | perf(worker): buffer scan log accumulation | Merged |
 | [crossplane/cli](https://github.com/crossplane/cli/pull/197) | validate: Recognize Kubernetes built-in resources | Open |
@@ -19,7 +20,6 @@
 | [traefik/traefik-helm-chart](https://github.com/traefik/traefik-helm-chart/pull/1933) | fix(ports): support IPv6 hostIP values | Merged |
 | [dapr/dapr](https://github.com/dapr/dapr/pull/10215) | fix: preserve sub-millisecond latency precision | Merged |
 | [grafana/docker-otel-lgtm](https://github.com/grafana/docker-otel-lgtm/pull/1596) | fix: prevent interactive shutdown hangs | Merged |
-| [open-telemetry/opentelemetry-helm-charts](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317) | fix(kube-stack): grant leader election lease RBAC | Merged |
 <!-- OSS-PRS:END -->
 
 ## `> security_credits`
