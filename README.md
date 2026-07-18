@@ -1,14 +1,16 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/cyber-menagerie.svg" width="100%" alt="Animated cyber security city with a running fox" />
+# lshdf
 
-<a href="https://github.com/ihopenre-eng">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2200&pause=500&color=00F5D4&center=true&vCenter=true&repeat=true&width=900&height=60&lines=%24+whoami+%3E+lshdf+%40+ihopenre-eng;%24+workflow+%3E+build+%7C+review+%7C+secure+%7C+ship;%24+focus+%3E+authn%2Fauthz+%7C+secure-defaults+%7C+oss-prs;%24+status+%3E+turning+review+feedback+into+merged+code" alt="Animated terminal introduction" />
-</a>
+<sub>Lee Seonghyeon · Security Research · OSS Engineering · Product Development</sub>
+
+<br><br>
+
+<a href="https://hakca.vn/">HAKCA</a> · <a href="https://12pdfedit.netlify.app/">12PDF Edit</a> · <a href="https://velog.io/@ihopenre-eng/posts">Velog</a>
 
 </div>
 
-<img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pixel-patrol.svg" width="100%" alt="Animated pixel cat chasing a software bug" />
+---
 
 ## `> featured_delivery`
 
@@ -38,26 +40,6 @@ AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Mai
 <!-- SECURITY-CREDITS:START -->
 _No public GitHub Advisory credits detected yet. This section updates automatically._
 <!-- SECURITY-CREDITS:END -->
-
-## `> contribution_stream`
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/output/github-contribution-grid-snake.svg" alt="Animated contribution snake" />
-</picture>
-
-<br>
-
-![Profile scans](https://komarev.com/ghpvc/?username=ihopenre-eng&style=for-the-badge&color=8338ec&label=PROFILE+SCANS)
-
-<br><br>
-
-<sub>&#9888; BUILD WITH CARE // REVIEW IN PUBLIC // SHIP SECURELY &#9888;</sub>
-
-</div>
 
 ## `> side_projects`
 
