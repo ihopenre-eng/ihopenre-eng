@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 132" role="img" aria-labelledby="title desc">
+  <title id="title">A small potato mascot walking</title>
+  <desc id="desc">A cute potato character walks from left to right along a subtle dotted path.</desc>
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f3c56e"/>
+      <stop offset=".55" stop-color="#d99a45"/>
+      <stop offset="1" stop-color="#b96f2e"/>
+    </linearGradient>
+    <linearGradient id="limb" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffe0a5"/>
+      <stop offset="1" stop-color="#d9a55f"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dy="2" result="offset"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <path d="M22 104H878" fill="none" stroke="#30363d" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 11"/>
+
+  <g filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="-105 0;905 0" dur="13s" repeatCount="indefinite"/>
+    <g transform="translate(0 5)">
+      <animateTransform attributeName="transform" type="translate" values="0 5;0 0;0 5" dur=".58s" repeatCount="indefinite"/>
+      <path d="M15 67C-3 67-12 55-5 43C2 31 19 39 30 49" fill="url(#limb)" stroke="#bd7b36" stroke-width="2"/>
+      <ellipse cx="57" cy="76" rx="20" ry="10" fill="url(#limb)" stroke="#bd7b36" stroke-width="2" transform="rotate(-19 57 76)"/>
+      <ellipse cx="123" cy="76" rx="20" ry="10" fill="url(#limb)" stroke="#bd7b36" stroke-width="2" transform="rotate(19 123 76)"/>
+      <path d="M34 38C42 8 113 2 139 28C159 48 151 89 127 100C96 115 42 103 28 74C21 60 25 48 34 38Z" fill="url(#skin)" stroke="#a96029" stroke-width="2.5"/>
+      <ellipse cx="63" cy="40" rx="10" ry="6" fill="#ffe9b9" opacity=".55" transform="rotate(-28 63 40)"/>
+      <ellipse cx="103" cy="53" rx="4.5" ry="8" fill="#17130e"/>
+      <ellipse cx="125" cy="53" rx="4.5" ry="8" fill="#17130e"/>
+      <path d="M108 69Q115 76 123 69" fill="none" stroke="#17130e" stroke-width="3.5" stroke-linecap="round"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-25 62 92;22 62 92;-25 62 92" dur=".58s" repeatCount="indefinite"/>
+        <ellipse cx="62" cy="104" rx="17" ry="8" fill="url(#limb)" stroke="#bd7b36" stroke-width="2"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="22 114 92;-25 114 92;22 114 92" dur=".58s" repeatCount="indefinite"/>
+        <ellipse cx="114" cy="104" rx="17" ry="8" fill="url(#limb)" stroke="#bd7b36" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
