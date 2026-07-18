@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/potato-walk.svg" width="420" alt="Cute potato mascot walking along a dotted path" />
+</p>
+
 <h2 align="center">lshdf</h2>
 <p align="center"><sub>Lee Seonghyeon · Security Research · OSS Engineering · Product Development</sub></p>
 
@@ -51,7 +55,3 @@ AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Mai
 <a href="https://hakca.vn/">HAKCA</a> · <a href="https://12pdfedit.netlify.app/">12PDF Edit</a> · <a href="https://velog.io/@ihopenre-eng/posts">Velog</a>
 
 </div>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/potato-walk.svg" width="420" alt="Cute potato mascot walking along a dotted path" />
-</p>
