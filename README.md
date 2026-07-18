@@ -24,7 +24,7 @@ AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Mai
 | Project | Contribution | Status |
 | :-- | :-- | :-- |
 | [openchoreo/openchoreo](https://github.com/openchoreo/openchoreo/pull/4223) | fix(controller): watch observability plane changes | Open |
-| [alpha-omega-security/scrutineer](https://github.com/alpha-omega-security/scrutineer/pull/655) | perf(worker): buffer scan log accumulation | Open |
+| [alpha-omega-security/scrutineer](https://github.com/alpha-omega-security/scrutineer/pull/655) | perf(worker): buffer scan log accumulation | Merged |
 | [crossplane/cli](https://github.com/crossplane/cli/pull/197) | validate: Recognize Kubernetes built-in resources | Open |
 | [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns/pull/6567) | fix(rfc2136): clear stale AXFR errors after fallback | Open |
 | [traefik/traefik-helm-chart](https://github.com/traefik/traefik-helm-chart/pull/1933) | fix(ports): support IPv6 hostIP values | Merged |
