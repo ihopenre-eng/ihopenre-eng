@@ -28,6 +28,10 @@
 _No public GitHub Advisory credits detected yet. This section updates automatically._
 <!-- SECURITY-CREDITS:END -->
 
+## `> recognition`
+
+[![Dapr Runtime Contributor](https://img.shields.io/badge/Dapr-Runtime%20Contributor-0D2192?style=flat-square&logo=dapr&logoColor=white)](https://github.com/dapr/dapr/pull/10215)
+
 ## `> side_projects`
 
 ### [`HAKCA`](https://hakca.vn/)
