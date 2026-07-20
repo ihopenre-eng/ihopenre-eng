@@ -30,7 +30,9 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 
 ## `> recognition`
 
-[![Dapr Runtime Contributor](https://img.shields.io/badge/Dapr-Runtime%20Contributor-0D2192?style=flat-square&logo=dapr&logoColor=white)](https://github.com/dapr/dapr/pull/10215)
+<a href="https://www.holopin.io/userbadge/cmrt2gcmm0006l2042ttekvo7">
+  <img src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbHJxaGU4aGMzNjU4MGZqd3dsZHgxaG93IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=" width="150" alt="Dapr Runtime Contributor badge awarded by Dapr" />
+</a>
 
 ## `> side_projects`
 
