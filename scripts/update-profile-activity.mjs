@@ -3,7 +3,8 @@ import { readFile, writeFile } from 'node:fs/promises';
 const USERNAME = process.env.PROFILE_USERNAME ?? 'ihopenre-eng';
 const README_PATH = process.env.PROFILE_README ?? 'README.md';
 const TOKEN = process.env.GITHUB_TOKEN;
-const MAX_PRS = 8;
+const MAX_PRS = 10;
+const MAX_ACTIVE_PRS = 3;
 const PROFILE_REPOSITORY = `${USERNAME}/${USERNAME}`.toLowerCase();
 const MAX_ADVISORY_PAGES = Number(process.env.MAX_ADVISORY_PAGES ?? 10);
 const ADVISORY_LOOKBACK_DAYS = Number(process.env.ADVISORY_LOOKBACK_DAYS ?? 14);
@@ -39,23 +40,52 @@ function nextLink(link) {
   return link.split(',').map((part) => part.trim()).find((part) => part.endsWith('rel="next"'))?.match(/<([^>]+)>/)?.[1] ?? null;
 }
 
-async function searchPullRequests(qualifiers) {
-  const query = encodeURIComponent(`author:${USERNAME} is:pr -repo:${PROFILE_REPOSITORY} ${qualifiers}`);
-  const { data } = await api(`https://api.github.com/search/issues?q=${query}&sort=updated&order=desc&per_page=${MAX_PRS}`);
-  return (data.items ?? []).filter(
-    (item) => item.repository_url?.split('/').slice(-2).join('/').toLowerCase() !== PROFILE_REPOSITORY,
-  );
+// This section is meant for upstream contributions only. `is:public` keeps private
+// work out of a public README even when the script runs with a broadly scoped token,
+// and `-user:` drops pull requests opened against the author's own repositories and forks.
+async function searchPullRequests(qualifiers, limit) {
+  const query = encodeURIComponent(`author:${USERNAME} is:pr is:public -user:${USERNAME} ${qualifiers}`);
+  const { data } = await api(`https://api.github.com/search/issues?q=${query}&sort=updated&order=desc&per_page=${limit}`);
+  return (data.items ?? []).filter((item) => {
+    const [owner, name] = item.repository_url?.split('/').slice(-2) ?? [];
+    if (!owner || !name) return false;
+    if (owner.toLowerCase() === USERNAME.toLowerCase()) return false;
+    if (`${owner}/${name}`.toLowerCase() === PROFILE_REPOSITORY) return false;
+    return item.user?.login?.toLowerCase() === USERNAME.toLowerCase();
+  });
 }
 
+// Merged work leads; open pull requests only fill whatever slots are left over.
 async function fetchPullRequests() {
   const [merged, active] = await Promise.all([
-    searchPullRequests('is:merged'),
-    searchPullRequests('-is:merged'),
+    searchPullRequests('is:merged', MAX_PRS),
+    searchPullRequests('-is:merged', MAX_ACTIVE_PRS),
   ]);
 
   const unique = new Map();
-  for (const item of [...merged, ...active]) unique.set(item.html_url, item);
-  return [...unique.values()].slice(0, MAX_PRS);
+  for (const item of merged.slice(0, MAX_PRS)) unique.set(item.html_url, item);
+  for (const item of active.slice(0, Math.max(0, MAX_PRS - unique.size))) unique.set(item.html_url, item);
+
+  const items = [...unique.values()];
+  const details = await Promise.all(items.map((item) => fetchPullRequestDetail(item)));
+  return items.map((item, index) => ({ ...item, detail: details[index] }));
+}
+
+// The search API omits diff size, so pull it per item to fill out the status column.
+async function fetchPullRequestDetail(item) {
+  if (!item.pull_request?.url) return null;
+  try {
+    const { data } = await api(item.pull_request.url);
+    return {
+      additions: data.additions,
+      deletions: data.deletions,
+      changedFiles: data.changed_files,
+      mergedAt: data.merged_at,
+    };
+  } catch (error) {
+    console.warn(`Skipping diff stats for ${item.html_url}: ${error.message}`);
+    return null;
+  }
 }
 
 async function fetchSecurityCredits() {
@@ -92,6 +122,19 @@ function splitConventionalTitle(title) {
   return match ? { tag: match[1], text: match[2] } : { tag: null, text: String(title ?? '').trim() };
 }
 
+// Diff size and landing date, stacked under the status pill.
+function renderStats(item, state) {
+  const detail = item.detail;
+  if (!detail || typeof detail.additions !== 'number') return '';
+
+  const files = detail.changedFiles === 1 ? '1 file' : `${detail.changedFiles} files`;
+  const date = shortDate(state === 'Merged' ? detail.mergedAt ?? item.closed_at : item.created_at);
+  return (
+    `<br /><sub><code>+${detail.additions} -${detail.deletions}</code></sub>` +
+    `<br /><sub>${files} · ${date}</sub>`
+  );
+}
+
 function renderPrs(items) {
   if (!items.length) return '_No public pull requests detected yet. This section updates automatically._';
 
@@ -107,7 +150,7 @@ function renderPrs(items) {
       '<tr>',
       `<td width="44" align="center"><a href="https://github.com/${encodeURIComponent(org)}"><img src="https://github.com/${encodeURIComponent(org)}.png?size=64" width="28" height="28" alt="${escapeHtml(org)}" /></a></td>`,
       `<td><a href="${item.html_url}"><b>${escapeHtml(repo)}</b></a><br /><sub>${chip}${escapeHtml(text)}</sub></td>`,
-      `<td width="96" align="right"><a href="${item.html_url}"><img src="${ASSET_BASE}/${pill.file}" width="${pill.width}" height="24" alt="${state}" /></a></td>`,
+      `<td width="168" align="right"><a href="${item.html_url}"><img src="${ASSET_BASE}/${pill.file}" width="${pill.width}" height="24" alt="${state}" /></a>${renderStats(item, state)}</td>`,
       '</tr>',
     ];
   });
