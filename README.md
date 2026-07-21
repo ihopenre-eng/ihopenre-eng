@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/potato-walk.svg" width="420" alt="Cute potato mascot walking along a dotted path" />
+  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/potato-walk.svg" width="560" alt="Animated potato mascot walking past a terminal" />
 </p>
 
 <h2 align="center">lshdf</h2>
