@@ -4,6 +4,7 @@ const USERNAME = process.env.PROFILE_USERNAME ?? 'ihopenre-eng';
 const README_PATH = process.env.PROFILE_README ?? 'README.md';
 const TOKEN = process.env.GITHUB_TOKEN;
 const MAX_PRS = 8;
+const PROFILE_REPOSITORY = `${USERNAME}/${USERNAME}`.toLowerCase();
 const MAX_ADVISORY_PAGES = Number(process.env.MAX_ADVISORY_PAGES ?? 10);
 const ADVISORY_LOOKBACK_DAYS = Number(process.env.ADVISORY_LOOKBACK_DAYS ?? 14);
 
@@ -28,10 +29,23 @@ function nextLink(link) {
   return link.split(',').map((part) => part.trim()).find((part) => part.endsWith('rel="next"'))?.match(/<([^>]+)>/)?.[1] ?? null;
 }
 
+async function searchPullRequests(qualifiers) {
+  const query = encodeURIComponent(`author:${USERNAME} is:pr -repo:${PROFILE_REPOSITORY} ${qualifiers}`);
+  const { data } = await api(`https://api.github.com/search/issues?q=${query}&sort=updated&order=desc&per_page=${MAX_PRS}`);
+  return (data.items ?? []).filter(
+    (item) => item.repository_url?.split('/').slice(-2).join('/').toLowerCase() !== PROFILE_REPOSITORY,
+  );
+}
+
 async function fetchPullRequests() {
-  const query = encodeURIComponent(`author:${USERNAME} is:pr`);
-  const { data } = await api(`https://api.github.com/search/issues?q=${query}&sort=created&order=desc&per_page=${MAX_PRS}`);
-  return data.items ?? [];
+  const [merged, active] = await Promise.all([
+    searchPullRequests('is:merged'),
+    searchPullRequests('-is:merged'),
+  ]);
+
+  const unique = new Map();
+  for (const item of [...merged, ...active]) unique.set(item.html_url, item);
+  return [...unique.values()].slice(0, MAX_PRS);
 }
 
 async function fetchSecurityCredits() {
