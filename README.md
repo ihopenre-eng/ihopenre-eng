@@ -34,6 +34,12 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 | [open-telemetry/opentelemetry-dotnet-contrib](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4769) | ci: verify semantic conventions generation | Open |
 <!-- OSS-PRS:END -->
 
+## `> toolbox`
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/stack-marquee.svg" width="880" alt="Scrolling list of security focus areas and engineering stack" />
+</p>
+
 ## `> side_projects`
 
 ### [`HAKCA`](https://hakca.vn/)
