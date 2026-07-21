@@ -7,6 +7,18 @@
 
 ---
 
+## `> security_credits`
+
+<!-- SECURITY-CREDITS:START -->
+_No public GitHub Advisory credits detected yet. This section updates automatically._
+<!-- SECURITY-CREDITS:END -->
+
+## `> recognition`
+
+<a href="https://www.holopin.io/userbadge/cmrt2gcmm0006l2042ttekvo7">
+  <img src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbHJxaGU4aGMzNjU4MGZqd3dsZHgxaG93IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=" width="150" alt="Dapr Runtime Contributor badge awarded by Dapr" />
+</a>
+
 ## `> open_source_prs`
 
 <!-- OSS-PRS:START -->
@@ -21,18 +33,6 @@
 | [grafana/docker-otel-lgtm](https://github.com/grafana/docker-otel-lgtm/pull/1596) | fix: prevent interactive shutdown hangs | Merged |
 | [open-telemetry/opentelemetry-dotnet-contrib](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4769) | ci: verify semantic conventions generation | Open |
 <!-- OSS-PRS:END -->
-
-## `> security_credits`
-
-<!-- SECURITY-CREDITS:START -->
-_No public GitHub Advisory credits detected yet. This section updates automatically._
-<!-- SECURITY-CREDITS:END -->
-
-## `> recognition`
-
-<a href="https://www.holopin.io/userbadge/cmrt2gcmm0006l2042ttekvo7">
-  <img src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbHJxaGU4aGMzNjU4MGZqd3dsZHgxaG93IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=" width="150" alt="Dapr Runtime Contributor badge awarded by Dapr" />
-</a>
 
 ## `> side_projects`
 
