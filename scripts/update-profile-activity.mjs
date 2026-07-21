@@ -14,7 +14,17 @@ const headers = {
   ...(TOKEN ? { Authorization: `Bearer ${TOKEN}` } : {}),
 };
 
+const ASSET_BASE = `https://raw.githubusercontent.com/${USERNAME}/${USERNAME}/main/assets`;
+
 const escapeCell = (value) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ').trim();
+const escapeHtml = (value) =>
+  String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll('\n', ' ')
+    .trim();
 const shortDate = (value) => value ? new Date(value).toISOString().slice(0, 10) : '-';
 const prettyCreditType = (value) => String(value ?? 'contributor').replaceAll('_', ' ');
 
@@ -70,14 +80,47 @@ async function fetchSecurityCredits() {
   return [...credits.values()].sort((a, b) => new Date(b.advisory.updated_at) - new Date(a.advisory.updated_at));
 }
 
+const PILL = {
+  Merged: { file: 'pill-merged.svg', width: 82 },
+  Open: { file: 'pill-open.svg', width: 66 },
+  Closed: { file: 'pill-closed.svg', width: 76 },
+};
+
+// Splits `fix(scope): title` into a chip and the remaining summary.
+function splitConventionalTitle(title) {
+  const match = /^([a-z]+(?:\([^)]*\))?!?):\s*(.+)$/i.exec(String(title ?? '').trim());
+  return match ? { tag: match[1], text: match[2] } : { tag: null, text: String(title ?? '').trim() };
+}
+
 function renderPrs(items) {
   if (!items.length) return '_No public pull requests detected yet. This section updates automatically._';
-  const rows = items.map((item) => {
+
+  const rows = items.flatMap((item) => {
     const repo = item.repository_url?.split('/').slice(-2).join('/') ?? 'repository';
+    const [org] = repo.split('/');
     const state = item.state === 'closed' ? (item.pull_request?.merged_at ? 'Merged' : 'Closed') : 'Open';
-    return `| [${escapeCell(repo)}](${item.html_url}) | ${escapeCell(item.title)} | ${state} |`;
+    const pill = PILL[state];
+    const { tag, text } = splitConventionalTitle(item.title);
+    const chip = tag ? `<code>${escapeHtml(tag)}</code> ` : '';
+
+    return [
+      '<tr>',
+      `<td width="44" align="center"><a href="https://github.com/${encodeURIComponent(org)}"><img src="https://github.com/${encodeURIComponent(org)}.png?size=64" width="28" height="28" alt="${escapeHtml(org)}" /></a></td>`,
+      `<td><a href="${item.html_url}"><b>${escapeHtml(repo)}</b></a><br /><sub>${chip}${escapeHtml(text)}</sub></td>`,
+      `<td width="96" align="right"><a href="${item.html_url}"><img src="${ASSET_BASE}/${pill.file}" width="${pill.width}" height="24" alt="${state}" /></a></td>`,
+      '</tr>',
+    ];
   });
-  return ['| Project | Contribution | Status |', '| :-- | :-- | :-- |', ...rows].join('\n');
+
+  return [
+    '<table>',
+    '<tr>',
+    '<th colspan="2" align="left"><sub>PROJECT · CONTRIBUTION</sub></th>',
+    '<th align="right"><sub>STATUS</sub></th>',
+    '</tr>',
+    ...rows,
+    '</table>',
+  ].join('\n');
 }
 
 function renderCredits(items) {

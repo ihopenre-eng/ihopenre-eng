@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 24" width="66" height="24" role="img" aria-label="Open">
+  <rect x="1" y="1" width="64" height="22" rx="11" fill="#0c1f14" stroke="#3fb950" stroke-width="1.2"/>
+  <circle cx="17" cy="12" r="5.5" fill="none" stroke="#3fb950" stroke-width="1.4" opacity=".5">
+    <animate attributeName="r" values="5.5;8.5" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".55;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="17" cy="12" r="4.6" fill="none" stroke="#3fb950" stroke-width="1.6"/>
+  <circle cx="17" cy="12" r="1.9" fill="#56d364">
+    <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="28" y="16" fill="#8ee79a" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing=".4">open</text>
+</svg>

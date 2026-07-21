@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 24" width="82" height="24" role="img" aria-label="Merged">
+  <defs>
+    <linearGradient id="pm-shine" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#a371f7" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#a371f7" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="pm-clip"><rect x="1" y="1" width="80" height="22" rx="11"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="80" height="22" rx="11" fill="#1b1030" stroke="#8957e5" stroke-width="1.2"/>
+  <g clip-path="url(#pm-clip)">
+    <rect x="-30" y="1" width="30" height="22" fill="url(#pm-shine)">
+      <animate attributeName="x" values="-30;82" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g stroke="#a371f7" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M13 8v5a3 3 0 0 0 3 3h3"/>
+  </g>
+  <circle cx="13" cy="7" r="2.4" fill="#0d1117" stroke="#a371f7" stroke-width="1.6"/>
+  <circle cx="21" cy="16" r="2.4" fill="#0d1117" stroke="#a371f7" stroke-width="1.6"/>
+  <text x="30" y="16" fill="#d5c4fb" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing=".4">merged</text>
+</svg>

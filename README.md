@@ -22,16 +22,52 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 ## `> open_source_prs`
 
 <!-- OSS-PRS:START -->
-| Project | Contribution | Status |
-| :-- | :-- | :-- |
-| [dapr/dapr](https://github.com/dapr/dapr/pull/10215) | fix: preserve sub-millisecond latency precision | Merged |
-| [openfga/dotnet-sdk](https://github.com/openfga/dotnet-sdk/pull/228) | fix: compare contextual tuples by value | Merged |
-| [updatecli/updatecli](https://github.com/updatecli/updatecli/pull/9609) | feat(gitcommit): add Git commit source resource | Merged |
-| [alpha-omega-security/scrutineer](https://github.com/alpha-omega-security/scrutineer/pull/655) | perf(worker): buffer scan log accumulation | Merged |
-| [open-telemetry/opentelemetry-helm-charts](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317) | fix(kube-stack): grant leader election lease RBAC | Merged |
-| [traefik/traefik-helm-chart](https://github.com/traefik/traefik-helm-chart/pull/1933) | fix(ports): support IPv6 hostIP values | Merged |
-| [grafana/docker-otel-lgtm](https://github.com/grafana/docker-otel-lgtm/pull/1596) | fix: prevent interactive shutdown hangs | Merged |
-| [open-telemetry/opentelemetry-dotnet-contrib](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4769) | ci: verify semantic conventions generation | Open |
+<table>
+<tr>
+<th colspan="2" align="left"><sub>PROJECT · CONTRIBUTION</sub></th>
+<th align="right"><sub>STATUS</sub></th>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/dapr"><img src="https://github.com/dapr.png?size=64" width="28" height="28" alt="dapr" /></a></td>
+<td><a href="https://github.com/dapr/dapr/pull/10215"><b>dapr/dapr</b></a><br /><sub><code>fix</code> preserve sub-millisecond latency precision</sub></td>
+<td width="96" align="right"><a href="https://github.com/dapr/dapr/pull/10215"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a></td>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/openfga"><img src="https://github.com/openfga.png?size=64" width="28" height="28" alt="openfga" /></a></td>
+<td><a href="https://github.com/openfga/dotnet-sdk/pull/228"><b>openfga/dotnet-sdk</b></a><br /><sub><code>fix</code> compare contextual tuples by value</sub></td>
+<td width="96" align="right"><a href="https://github.com/openfga/dotnet-sdk/pull/228"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a></td>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/updatecli"><img src="https://github.com/updatecli.png?size=64" width="28" height="28" alt="updatecli" /></a></td>
+<td><a href="https://github.com/updatecli/updatecli/pull/9609"><b>updatecli/updatecli</b></a><br /><sub><code>feat(gitcommit)</code> add Git commit source resource</sub></td>
+<td width="96" align="right"><a href="https://github.com/updatecli/updatecli/pull/9609"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a></td>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/alpha-omega-security"><img src="https://github.com/alpha-omega-security.png?size=64" width="28" height="28" alt="alpha-omega-security" /></a></td>
+<td><a href="https://github.com/alpha-omega-security/scrutineer/pull/655"><b>alpha-omega-security/scrutineer</b></a><br /><sub><code>perf(worker)</code> buffer scan log accumulation</sub></td>
+<td width="96" align="right"><a href="https://github.com/alpha-omega-security/scrutineer/pull/655"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a></td>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/open-telemetry"><img src="https://github.com/open-telemetry.png?size=64" width="28" height="28" alt="open-telemetry" /></a></td>
+<td><a href="https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317"><b>open-telemetry/opentelemetry-helm-charts</b></a><br /><sub><code>fix(kube-stack)</code> grant leader election lease RBAC</sub></td>
+<td width="96" align="right"><a href="https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a></td>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/traefik"><img src="https://github.com/traefik.png?size=64" width="28" height="28" alt="traefik" /></a></td>
+<td><a href="https://github.com/traefik/traefik-helm-chart/pull/1933"><b>traefik/traefik-helm-chart</b></a><br /><sub><code>fix(ports)</code> support IPv6 hostIP values</sub></td>
+<td width="96" align="right"><a href="https://github.com/traefik/traefik-helm-chart/pull/1933"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a></td>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/grafana"><img src="https://github.com/grafana.png?size=64" width="28" height="28" alt="grafana" /></a></td>
+<td><a href="https://github.com/grafana/docker-otel-lgtm/pull/1596"><b>grafana/docker-otel-lgtm</b></a><br /><sub><code>fix</code> prevent interactive shutdown hangs</sub></td>
+<td width="96" align="right"><a href="https://github.com/grafana/docker-otel-lgtm/pull/1596"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a></td>
+</tr>
+<tr>
+<td width="44" align="center"><a href="https://github.com/rancher"><img src="https://github.com/rancher.png?size=64" width="28" height="28" alt="rancher" /></a></td>
+<td><a href="https://github.com/rancher/k3k/pull/1053"><b>rancher/k3k</b></a><br /><sub>Expose loadBalancerClass through LoadBalancer configuration</sub></td>
+<td width="96" align="right"><a href="https://github.com/rancher/k3k/pull/1053"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a></td>
+</tr>
+</table>
 <!-- OSS-PRS:END -->
 
 ## `> toolbox`
