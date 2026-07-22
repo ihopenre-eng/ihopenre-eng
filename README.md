@@ -13,7 +13,7 @@
 ## `> security_credits`
 
 <!-- SECURITY-CREDITS:START -->
-_No public GitHub Advisory credits detected yet. This section updates automatically._
+_No public GitHub Advisory credits detected yet. 
 <!-- SECURITY-CREDITS:END -->
 
 ## `> recognition`
