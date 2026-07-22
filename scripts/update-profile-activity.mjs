@@ -1,4 +1,5 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { dirname } from 'node:path';
 
 const USERNAME = process.env.PROFILE_USERNAME ?? 'ihopenre-eng';
 const README_PATH = process.env.PROFILE_README ?? 'README.md';
@@ -8,6 +9,10 @@ const MAX_ACTIVE_PRS = 3;
 const PROFILE_REPOSITORY = `${USERNAME}/${USERNAME}`.toLowerCase();
 const MAX_ADVISORY_PAGES = Number(process.env.MAX_ADVISORY_PAGES ?? 10);
 const ADVISORY_LOOKBACK_DAYS = Number(process.env.ADVISORY_LOOKBACK_DAYS ?? 14);
+// The advisory API is queried by modification window, so a credit stops being
+// returned once it goes quiet. Credits are earned permanently, so every one that
+// has ever been seen is kept on disk and merged back in on each run.
+const CREDITS_STORE_PATH = process.env.PROFILE_CREDITS_STORE ?? 'data/security-credits.json';
 
 const headers = {
   Accept: 'application/vnd.github+json',
@@ -88,6 +93,8 @@ async function fetchPullRequestDetail(item) {
   }
 }
 
+const byNewest = (a, b) => new Date(b.updatedAt ?? 0) - new Date(a.updatedAt ?? 0);
+
 async function fetchSecurityCredits() {
   const since = new Date(Date.now() - ADVISORY_LOOKBACK_DAYS * 86_400_000).toISOString().slice(0, 10);
   const today = new Date().toISOString().slice(0, 10);
@@ -101,13 +108,38 @@ async function fetchSecurityCredits() {
         (credit) => credit.user?.login?.toLowerCase() === USERNAME.toLowerCase(),
       );
       if (myCredits.length) {
-        credits.set(advisory.ghsa_id, { advisory, types: myCredits.map((credit) => prettyCreditType(credit.type)) });
+        credits.set(advisory.ghsa_id, {
+          ghsaId: advisory.ghsa_id,
+          htmlUrl: advisory.html_url,
+          summary: advisory.summary,
+          severity: advisory.severity,
+          publishedAt: advisory.published_at,
+          updatedAt: advisory.updated_at,
+          types: myCredits.map((credit) => prettyCreditType(credit.type)),
+        });
       }
     }
     url = nextLink(link);
   }
 
-  return [...credits.values()].sort((a, b) => new Date(b.advisory.updated_at) - new Date(a.advisory.updated_at));
+  return [...credits.values()].sort(byNewest);
+}
+
+async function readCreditsStore() {
+  try {
+    const parsed = JSON.parse(await readFile(CREDITS_STORE_PATH, 'utf8'));
+    return Array.isArray(parsed) ? parsed.filter((entry) => entry?.ghsaId) : [];
+  } catch (error) {
+    if (error.code !== 'ENOENT') console.warn(`Ignoring unreadable credits store: ${error.message}`);
+    return [];
+  }
+}
+
+// Freshly fetched advisories win, so a re-published summary or severity still lands.
+function mergeCredits(stored, fetched) {
+  const merged = new Map(stored.map((entry) => [entry.ghsaId, entry]));
+  for (const entry of fetched) merged.set(entry.ghsaId, entry);
+  return [...merged.values()].sort(byNewest);
 }
 
 const PILL = {
@@ -168,8 +200,8 @@ function renderPrs(items) {
 
 function renderCredits(items) {
   if (!items.length) return '_No public GitHub Advisory credits detected yet. This section updates automatically._';
-  const rows = items.map(({ advisory, types }) =>
-    `| [${advisory.ghsa_id}](${advisory.html_url}) | ${escapeCell(advisory.summary)} | ${escapeCell(types.join(', '))} | ${escapeCell(advisory.severity ?? 'unknown')} | ${shortDate(advisory.published_at)} |`,
+  const rows = items.map((entry) =>
+    `| [${entry.ghsaId}](${entry.htmlUrl}) | ${escapeCell(entry.summary)} | ${escapeCell((entry.types ?? []).join(', '))} | ${escapeCell(entry.severity ?? 'unknown')} | ${shortDate(entry.publishedAt)} |`,
   );
   return ['| Advisory | Summary | Credit | Severity | Published |', '| :-- | :-- | :-- | :-- | :-- |', ...rows].join('\n');
 }
@@ -183,18 +215,24 @@ function replaceSection(readme, name, content) {
   return readme.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
-const [pullRequests, securityCredits, originalReadme] = await Promise.all([
+const [pullRequests, freshCredits, storedCredits, originalReadme] = await Promise.all([
   fetchPullRequests(),
   fetchSecurityCredits(),
+  readCreditsStore(),
   readFile(README_PATH, 'utf8'),
 ]);
+
+const securityCredits = mergeCredits(storedCredits, freshCredits);
+const serializedCredits = `${JSON.stringify(securityCredits, null, 2)}\n`;
 
 let updatedReadme = replaceSection(originalReadme, 'OSS-PRS', renderPrs(pullRequests));
 updatedReadme = replaceSection(updatedReadme, 'SECURITY-CREDITS', renderCredits(securityCredits));
 
-if (updatedReadme !== originalReadme) {
-  await writeFile(README_PATH, updatedReadme);
-  console.log(`Updated profile activity: ${pullRequests.length} PRs, ${securityCredits.length} security credits.`);
-} else {
-  console.log(`Profile activity already current: ${pullRequests.length} PRs, ${securityCredits.length} security credits.`);
-}
+if (updatedReadme !== originalReadme) await writeFile(README_PATH, updatedReadme);
+
+// Always written, so the commit step in CI can name the path unconditionally.
+await mkdir(dirname(CREDITS_STORE_PATH), { recursive: true });
+await writeFile(CREDITS_STORE_PATH, serializedCredits);
+
+const state = updatedReadme === originalReadme ? 'already current' : 'updated';
+console.log(`Profile activity ${state}: ${pullRequests.length} PRs, ${securityCredits.length} security credits.`);

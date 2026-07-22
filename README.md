@@ -13,7 +13,7 @@
 ## `> security_credits`
 
 <!-- SECURITY-CREDITS:START -->
-_No public GitHub Advisory credits detected yet. 
+_No public GitHub Advisory credits detected yet. This section updates automatically._
 <!-- SECURITY-CREDITS:END -->
 
 ## `> recognition`
@@ -70,6 +70,11 @@ _No public GitHub Advisory credits detected yet.
 <td width="168" align="right"><a href="https://github.com/grafana/docker-otel-lgtm/pull/1596"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+50 -6</code></sub><br /><sub>3 files · 2026-07-16</sub></td>
 </tr>
 <tr>
+<td width="44" align="center"><a href="https://github.com/cloudflare"><img src="https://github.com/cloudflare.png?size=64" width="28" height="28" alt="cloudflare" /></a></td>
+<td><a href="https://github.com/cloudflare/workers-sdk/pull/14795"><b>cloudflare/workers-sdk</b></a><br /><sub>[miniflare] Honour fit, gravity and background in the local Images binding</sub></td>
+<td width="168" align="right"><a href="https://github.com/cloudflare/workers-sdk/pull/14795"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+199 -39</code></sub><br /><sub>4 files · 2026-07-22</sub></td>
+</tr>
+<tr>
 <td width="44" align="center"><a href="https://github.com/open-telemetry"><img src="https://github.com/open-telemetry.png?size=64" width="28" height="28" alt="open-telemetry" /></a></td>
 <td><a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4769"><b>open-telemetry/opentelemetry-dotnet-contrib</b></a><br /><sub><code>ci</code> verify semantic conventions generation</sub></td>
 <td width="168" align="right"><a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4769"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+38 -41</code></sub><br /><sub>4 files · 2026-07-16</sub></td>
@@ -79,12 +84,18 @@ _No public GitHub Advisory credits detected yet.
 <td><a href="https://github.com/Boeing/config-file-validator/pull/592"><b>Boeing/config-file-validator</b></a><br /><sub><code>fix(formatter)</code> normalize JSON blank lines before closing delimiters</sub></td>
 <td width="168" align="right"><a href="https://github.com/Boeing/config-file-validator/pull/592"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+210 -8</code></sub><br /><sub>7 files · 2026-07-22</sub></td>
 </tr>
-<tr>
-<td width="44" align="center"><a href="https://github.com/grafana"><img src="https://github.com/grafana.png?size=64" width="28" height="28" alt="grafana" /></a></td>
-<td><a href="https://github.com/grafana/sigma-rule-deployment/pull/347"><b>grafana/sigma-rule-deployment</b></a><br /><sub>Add highest level template helper</sub></td>
-<td width="168" align="right"><a href="https://github.com/grafana/sigma-rule-deployment/pull/347"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+192 -2</code></sub><br /><sub>4 files · 2026-07-21</sub></td>
-</tr>
 </table>
+<!-- OSS-PRS:END -->
+
+## `> toolbox`
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/stack-marquee.svg"
+    width="880"
+    alt="Scrolling list of security focus areas and engineering stack"
+  />
+</p>
 
 ## `> side_projects`
 
