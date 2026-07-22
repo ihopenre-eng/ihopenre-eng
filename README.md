@@ -85,6 +85,7 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 <td width="168" align="right"><a href="https://github.com/grafana/sigma-rule-deployment/pull/347"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+192 -2</code></sub><br /><sub>4 files · 2026-07-21</sub></td>
 </tr>
 </table>
+
 ## `> side_projects`
 
 ### [`HAKCA`](https://hakca.vn/)
