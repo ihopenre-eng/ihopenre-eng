@@ -75,14 +75,14 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 <td width="168" align="right"><a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib/pull/4769"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+38 -41</code></sub><br /><sub>4 files · 2026-07-16</sub></td>
 </tr>
 <tr>
-<td width="44" align="center"><a href="https://github.com/openchoreo"><img src="https://github.com/openchoreo.png?size=64" width="28" height="28" alt="openchoreo" /></a></td>
-<td><a href="https://github.com/openchoreo/openchoreo/pull/4223"><b>openchoreo/openchoreo</b></a><br /><sub><code>fix(controller)</code> watch observability plane changes</sub></td>
-<td width="168" align="right"><a href="https://github.com/openchoreo/openchoreo/pull/4223"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+279 -0</code></sub><br /><sub>3 files · 2026-07-17</sub></td>
+<td width="44" align="center"><a href="https://github.com/Boeing"><img src="https://github.com/Boeing.png?size=64" width="28" height="28" alt="Boeing" /></a></td>
+<td><a href="https://github.com/Boeing/config-file-validator/pull/592"><b>Boeing/config-file-validator</b></a><br /><sub><code>fix(formatter)</code> normalize JSON blank lines before closing delimiters</sub></td>
+<td width="168" align="right"><a href="https://github.com/Boeing/config-file-validator/pull/592"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+210 -8</code></sub><br /><sub>7 files · 2026-07-22</sub></td>
 </tr>
 <tr>
-<td width="44" align="center"><a href="https://github.com/JanDeDobbeleer"><img src="https://github.com/JanDeDobbeleer.png?size=64" width="28" height="28" alt="JanDeDobbeleer" /></a></td>
-<td><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7707"><b>JanDeDobbeleer/oh-my-posh</b></a><br /><sub><code>test(serve)</code> wait on records instead of wall-clock silence</sub></td>
-<td width="168" align="right"><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7707"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+78 -8</code></sub><br /><sub>2 files · 2026-07-21</sub></td>
+<td width="44" align="center"><a href="https://github.com/grafana"><img src="https://github.com/grafana.png?size=64" width="28" height="28" alt="grafana" /></a></td>
+<td><a href="https://github.com/grafana/sigma-rule-deployment/pull/347"><b>grafana/sigma-rule-deployment</b></a><br /><sub>Add highest level template helper</sub></td>
+<td width="168" align="right"><a href="https://github.com/grafana/sigma-rule-deployment/pull/347"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-open.svg" width="66" height="24" alt="Open" /></a><br /><sub><code>+192 -2</code></sub><br /><sub>4 files · 2026-07-21</sub></td>
 </tr>
 </table>
 <!-- OSS-PRS:END -->
