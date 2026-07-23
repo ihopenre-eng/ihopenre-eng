@@ -5,7 +5,6 @@ const USERNAME = process.env.PROFILE_USERNAME ?? 'ihopenre-eng';
 const README_PATH = process.env.PROFILE_README ?? 'README.md';
 const TOKEN = process.env.GITHUB_TOKEN;
 const MAX_PRS = 10;
-const MAX_ACTIVE_PRS = 3;
 const PROFILE_REPOSITORY = `${USERNAME}/${USERNAME}`.toLowerCase();
 const MAX_ADVISORY_PAGES = Number(process.env.MAX_ADVISORY_PAGES ?? 10);
 const ADVISORY_LOOKBACK_DAYS = Number(process.env.ADVISORY_LOOKBACK_DAYS ?? 14);
@@ -60,18 +59,9 @@ async function searchPullRequests(qualifiers, limit) {
   });
 }
 
-// Merged work leads; open pull requests only fill whatever slots are left over.
+// 공개 프로필에는 완료된 upstream 기여만 표시한다.
 async function fetchPullRequests() {
-  const [merged, active] = await Promise.all([
-    searchPullRequests('is:merged', MAX_PRS),
-    searchPullRequests('-is:merged', MAX_ACTIVE_PRS),
-  ]);
-
-  const unique = new Map();
-  for (const item of merged.slice(0, MAX_PRS)) unique.set(item.html_url, item);
-  for (const item of active.slice(0, Math.max(0, MAX_PRS - unique.size))) unique.set(item.html_url, item);
-
-  const items = [...unique.values()];
+  const items = await searchPullRequests('is:merged', MAX_PRS);
   const details = await Promise.all(items.map((item) => fetchPullRequestDetail(item)));
   return items.map((item, index) => ({ ...item, detail: details[index] }));
 }
