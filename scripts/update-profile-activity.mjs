@@ -63,7 +63,9 @@ async function searchPullRequests(qualifiers, limit) {
 async function fetchPullRequests() {
   const items = await searchPullRequests('is:merged', MAX_PRS);
   const details = await Promise.all(items.map((item) => fetchPullRequestDetail(item)));
-  return items.map((item, index) => ({ ...item, detail: details[index] }));
+  return items
+    .map((item, index) => ({ ...item, detail: details[index] }))
+    .sort((left, right) => contributionValue(right) - contributionValue(left) || byNewest(left, right));
 }
 
 // The search API omits diff size, so pull it per item to fill out the status column.
@@ -81,6 +83,37 @@ async function fetchPullRequestDetail(item) {
     console.warn(`Skipping diff stats for ${item.html_url}: ${error.message}`);
     return null;
   }
+}
+
+// 프로필 첫 화면은 보안·권한, 운영 인프라, 사용자 영향, 구현 범위 순으로 정렬한다.
+function contributionValue(item) {
+  const repo = item.repository_url?.split('/').slice(-2).join('/').toLowerCase() ?? '';
+  const title = String(item.title ?? '').toLowerCase();
+  const changedLines = Number(item.detail?.additions ?? 0) + Number(item.detail?.deletions ?? 0);
+  let score = 0;
+
+  const repositoryImpact = {
+    'open-telemetry/opentelemetry-helm-charts': 65,
+    'openfga/dotnet-sdk': 55,
+    'dapr/dapr': 50,
+    'traefik/traefik-helm-chart': 46,
+    'updatecli/updatecli': 44,
+    'alpha-omega-security/scrutineer': 35,
+    'grafana/docker-otel-lgtm': 32,
+    'jandedobbeleer/oh-my-posh': 15,
+  };
+  score += repositoryImpact[repo] ?? 25;
+
+  if (/\b(rbac|auth|authoriz|permission|credential|security|vulnerabil|tenant)\b/.test(title)) score += 50;
+  if (repo.startsWith('openfga/')) score += 30;
+  if (/\b(latency|precision|shutdown|reliab|resilien|ipv6|network)\b/.test(title)) score += 20;
+  if (/^feat(?:\(|:)/.test(title)) score += 20;
+  else if (/^perf(?:\(|:)/.test(title)) score += 15;
+  else if (/^fix(?:\(|:)/.test(title)) score += 12;
+  else if (/^test(?:\(|:)/.test(title)) score -= 25;
+  score += Math.min(15, Math.floor(Math.log10(changedLines + 1) * 5));
+
+  return score;
 }
 
 const byNewest = (a, b) => new Date(b.updatedAt ?? 0) - new Date(a.updatedAt ?? 0);
