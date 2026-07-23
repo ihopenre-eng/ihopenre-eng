@@ -87,15 +87,6 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 </table>
 <!-- OSS-PRS:END -->
 
-## `> toolbox`
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/stack-marquee.svg"
-    width="880"
-    alt="Scrolling list of security focus areas and engineering stack"
-  />
-</p>
 
 ## `> side_projects`
 
