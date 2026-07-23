@@ -159,12 +159,13 @@ function renderPrs(items) {
 
   const cards = items.map((item) => {
     const repo = item.repository_url?.split('/').slice(-2).join('/') ?? 'repository';
+    const [org] = repo.split('/');
     const state = item.state === 'closed' ? (item.pull_request?.merged_at ? 'Merged' : 'Closed') : 'Open';
     const pill = PILL[state];
     const { tag, text } = splitConventionalTitle(item.title);
     const chip = tag ? `<code>${escapeHtml(tag)}</code> ` : '';
 
-    return `<td width="50%" valign="top"><a href="${item.html_url}"><b>${escapeHtml(repo)}</b></a>&nbsp;<a href="${item.html_url}"><img src="${ASSET_BASE}/${pill.file}" width="${pill.width}" height="24" alt="${state}" /></a><br /><sub>${chip}${escapeHtml(text)}</sub>${renderCompactStats(item, state)}</td>`;
+    return `<td width="50%" valign="top"><a href="https://github.com/${encodeURIComponent(org)}"><img src="https://github.com/${encodeURIComponent(org)}.png?size=64" width="28" height="28" align="absmiddle" alt="${escapeHtml(org)}" /></a>&nbsp;<a href="${item.html_url}"><b>${escapeHtml(repo)}</b></a>&nbsp;<a href="${item.html_url}"><img src="${ASSET_BASE}/${pill.file}" width="${pill.width}" height="24" align="absmiddle" alt="${state}" /></a><br /><sub>${chip}${escapeHtml(text)}</sub>${renderCompactStats(item, state)}</td>`;
   });
 
   const rows = [];
