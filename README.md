@@ -28,7 +28,7 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 
 <a href="https://www.holopin.io/userbadge/cmrxdswal0001l1045s2lpjpu">
   <img
-    src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbXJ4ZHN3YWwwMDAxbDEwNDVzMmxwanB1IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0="
+    src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbGcwdTR4YnQ4MTQ1MGZtZndqZG05c3RlIiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0="
     width="150"
     alt="Open Sourcerer badge awarded by Oh My Posh"
   />
