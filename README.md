@@ -13,7 +13,9 @@
 ## `> security_credits`
 
 <!-- SECURITY-CREDITS:START -->
-_No public GitHub Advisory credits detected yet. This section updates automatically._
+
+*No public GitHub Advisory credits detected yet. This section updates automatically.*
+
 <!-- SECURITY-CREDITS:END -->
 
 ## `> recognition`
@@ -26,9 +28,18 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
   />
 </a>
 
+<a href="https://www.holopin.io/userbadge/cmrxdswal0001l1045s2lpjpu">
+  <img
+    src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbXJ4ZHN3YWwwMDAxbDEwNDVzMmxwanB1IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0="
+    width="150"
+    alt="Open Sourcerer badge awarded by Oh My Posh"
+  />
+</a>
+
 ## `> open_source_prs`
 
 <!-- OSS-PRS:START -->
+
 <table>
 <tr>
 <th colspan="2" align="left"><sub>PROJECT · CONTRIBUTION</sub></th>
@@ -114,9 +125,7 @@ AI-assisted Tool Box Meeting program delivered for PHO VIET, a POSCO Vietnam Mai
 <div align="center">
 
 <a href="https://hakca.vn/">HAKCA</a>
-·
-<a href="https://12pdfedit.netlify.app/">12PDF Edit</a>
-·
-<a href="https://velog.io/@ihopenre-eng/posts">Velog</a>
+· <a href="https://12pdfedit.netlify.app/">12PDF Edit</a>
+· <a href="https://velog.io/@ihopenre-eng/posts">Velog</a>
 
 </div>
