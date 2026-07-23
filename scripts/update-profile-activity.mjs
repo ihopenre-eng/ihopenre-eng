@@ -144,45 +144,36 @@ function splitConventionalTitle(title) {
   return match ? { tag: match[1], text: match[2] } : { tag: null, text: String(title ?? '').trim() };
 }
 
-// Diff size and landing date, stacked under the status pill.
-function renderStats(item, state) {
+// 카드 하단에는 변경량·파일 수·병합일만 한 줄로 압축한다.
+function renderCompactStats(item, state) {
   const detail = item.detail;
   if (!detail || typeof detail.additions !== 'number') return '';
 
   const files = detail.changedFiles === 1 ? '1 file' : `${detail.changedFiles} files`;
   const date = shortDate(state === 'Merged' ? detail.mergedAt ?? item.closed_at : item.created_at);
-  return (
-    `<br /><sub><code>+${detail.additions} -${detail.deletions}</code></sub>` +
-    `<br /><sub>${files} · ${date}</sub>`
-  );
+  return `<br /><sub><code>+${detail.additions} -${detail.deletions}</code> · ${files} · ${date}</sub>`;
 }
 
 function renderPrs(items) {
   if (!items.length) return '_No public pull requests detected yet. This section updates automatically._';
 
-  const rows = items.flatMap((item) => {
+  const cards = items.map((item) => {
     const repo = item.repository_url?.split('/').slice(-2).join('/') ?? 'repository';
-    const [org] = repo.split('/');
     const state = item.state === 'closed' ? (item.pull_request?.merged_at ? 'Merged' : 'Closed') : 'Open';
     const pill = PILL[state];
     const { tag, text } = splitConventionalTitle(item.title);
     const chip = tag ? `<code>${escapeHtml(tag)}</code> ` : '';
 
-    return [
-      '<tr>',
-      `<td width="44" align="center"><a href="https://github.com/${encodeURIComponent(org)}"><img src="https://github.com/${encodeURIComponent(org)}.png?size=64" width="28" height="28" alt="${escapeHtml(org)}" /></a></td>`,
-      `<td><a href="${item.html_url}"><b>${escapeHtml(repo)}</b></a><br /><sub>${chip}${escapeHtml(text)}</sub></td>`,
-      `<td width="168" align="right"><a href="${item.html_url}"><img src="${ASSET_BASE}/${pill.file}" width="${pill.width}" height="24" alt="${state}" /></a>${renderStats(item, state)}</td>`,
-      '</tr>',
-    ];
+    return `<td width="50%" valign="top"><a href="${item.html_url}"><b>${escapeHtml(repo)}</b></a>&nbsp;<a href="${item.html_url}"><img src="${ASSET_BASE}/${pill.file}" width="${pill.width}" height="24" alt="${state}" /></a><br /><sub>${chip}${escapeHtml(text)}</sub>${renderCompactStats(item, state)}</td>`;
   });
+
+  const rows = [];
+  for (let index = 0; index < cards.length; index += 2) {
+    rows.push('<tr>', cards[index], cards[index + 1] ?? '<td width="50%"></td>', '</tr>');
+  }
 
   return [
     '<table>',
-    '<tr>',
-    '<th colspan="2" align="left"><sub>PROJECT · CONTRIBUTION</sub></th>',
-    '<th align="right"><sub>STATUS</sub></th>',
-    '</tr>',
     ...rows,
     '</table>',
   ].join('\n');

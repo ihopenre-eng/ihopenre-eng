@@ -41,53 +41,24 @@ _No public GitHub Advisory credits detected yet. This section updates automatica
 <!-- OSS-PRS:START -->
 <table>
 <tr>
-<th colspan="2" align="left"><sub>PROJECT · CONTRIBUTION</sub></th>
-<th align="right"><sub>STATUS</sub></th>
+<td width="50%" valign="top"><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7707"><b>JanDeDobbeleer/oh-my-posh</b></a>&nbsp;<a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7707"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>test(serve)</code> wait on records instead of wall-clock silence</sub><br /><sub><code>+78 -8</code> · 2 files · 2026-07-23</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7709"><b>JanDeDobbeleer/oh-my-posh</b></a>&nbsp;<a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7709"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>test(prompt)</code> remove cross-test global state dependencies</sub><br /><sub><code>+54 -12</code> · 4 files · 2026-07-23</sub></td>
 </tr>
 <tr>
-<td width="44" align="center"><a href="https://github.com/JanDeDobbeleer"><img src="https://github.com/JanDeDobbeleer.png?size=64" width="28" height="28" alt="JanDeDobbeleer" /></a></td>
-<td><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7707"><b>JanDeDobbeleer/oh-my-posh</b></a><br /><sub><code>test(serve)</code> wait on records instead of wall-clock silence</sub></td>
-<td width="168" align="right"><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7707"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+78 -8</code></sub><br /><sub>2 files · 2026-07-23</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/dapr/dapr/pull/10215"><b>dapr/dapr</b></a>&nbsp;<a href="https://github.com/dapr/dapr/pull/10215"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>fix</code> preserve sub-millisecond latency precision</sub><br /><sub><code>+57 -2</code> · 3 files · 2026-07-16</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/openfga/dotnet-sdk/pull/228"><b>openfga/dotnet-sdk</b></a>&nbsp;<a href="https://github.com/openfga/dotnet-sdk/pull/228"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>fix</code> compare contextual tuples by value</sub><br /><sub><code>+51 -2</code> · 2 files · 2026-07-19</sub></td>
 </tr>
 <tr>
-<td width="44" align="center"><a href="https://github.com/JanDeDobbeleer"><img src="https://github.com/JanDeDobbeleer.png?size=64" width="28" height="28" alt="JanDeDobbeleer" /></a></td>
-<td><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7709"><b>JanDeDobbeleer/oh-my-posh</b></a><br /><sub><code>test(prompt)</code> remove cross-test global state dependencies</sub></td>
-<td width="168" align="right"><a href="https://github.com/JanDeDobbeleer/oh-my-posh/pull/7709"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+54 -12</code></sub><br /><sub>4 files · 2026-07-23</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/updatecli/updatecli/pull/9609"><b>updatecli/updatecli</b></a>&nbsp;<a href="https://github.com/updatecli/updatecli/pull/9609"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>feat(gitcommit)</code> add Git commit source resource</sub><br /><sub><code>+705 -4</code> · 11 files · 2026-07-18</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/alpha-omega-security/scrutineer/pull/655"><b>alpha-omega-security/scrutineer</b></a>&nbsp;<a href="https://github.com/alpha-omega-security/scrutineer/pull/655"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>perf(worker)</code> buffer scan log accumulation</sub><br /><sub><code>+100 -19</code> · 2 files · 2026-07-18</sub></td>
 </tr>
 <tr>
-<td width="44" align="center"><a href="https://github.com/dapr"><img src="https://github.com/dapr.png?size=64" width="28" height="28" alt="dapr" /></a></td>
-<td><a href="https://github.com/dapr/dapr/pull/10215"><b>dapr/dapr</b></a><br /><sub><code>fix</code> preserve sub-millisecond latency precision</sub></td>
-<td width="168" align="right"><a href="https://github.com/dapr/dapr/pull/10215"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+57 -2</code></sub><br /><sub>3 files · 2026-07-16</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317"><b>open-telemetry/opentelemetry-helm-charts</b></a>&nbsp;<a href="https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>fix(kube-stack)</code> grant leader election lease RBAC</sub><br /><sub><code>+41 -41</code> · 37 files · 2026-07-17</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/traefik/traefik-helm-chart/pull/1933"><b>traefik/traefik-helm-chart</b></a>&nbsp;<a href="https://github.com/traefik/traefik-helm-chart/pull/1933"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>fix(ports)</code> support IPv6 hostIP values</sub><br /><sub><code>+43 -4</code> · 2 files · 2026-07-17</sub></td>
 </tr>
 <tr>
-<td width="44" align="center"><a href="https://github.com/openfga"><img src="https://github.com/openfga.png?size=64" width="28" height="28" alt="openfga" /></a></td>
-<td><a href="https://github.com/openfga/dotnet-sdk/pull/228"><b>openfga/dotnet-sdk</b></a><br /><sub><code>fix</code> compare contextual tuples by value</sub></td>
-<td width="168" align="right"><a href="https://github.com/openfga/dotnet-sdk/pull/228"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+51 -2</code></sub><br /><sub>2 files · 2026-07-19</sub></td>
-</tr>
-<tr>
-<td width="44" align="center"><a href="https://github.com/updatecli"><img src="https://github.com/updatecli.png?size=64" width="28" height="28" alt="updatecli" /></a></td>
-<td><a href="https://github.com/updatecli/updatecli/pull/9609"><b>updatecli/updatecli</b></a><br /><sub><code>feat(gitcommit)</code> add Git commit source resource</sub></td>
-<td width="168" align="right"><a href="https://github.com/updatecli/updatecli/pull/9609"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+705 -4</code></sub><br /><sub>11 files · 2026-07-18</sub></td>
-</tr>
-<tr>
-<td width="44" align="center"><a href="https://github.com/alpha-omega-security"><img src="https://github.com/alpha-omega-security.png?size=64" width="28" height="28" alt="alpha-omega-security" /></a></td>
-<td><a href="https://github.com/alpha-omega-security/scrutineer/pull/655"><b>alpha-omega-security/scrutineer</b></a><br /><sub><code>perf(worker)</code> buffer scan log accumulation</sub></td>
-<td width="168" align="right"><a href="https://github.com/alpha-omega-security/scrutineer/pull/655"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+100 -19</code></sub><br /><sub>2 files · 2026-07-18</sub></td>
-</tr>
-<tr>
-<td width="44" align="center"><a href="https://github.com/open-telemetry"><img src="https://github.com/open-telemetry.png?size=64" width="28" height="28" alt="open-telemetry" /></a></td>
-<td><a href="https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317"><b>open-telemetry/opentelemetry-helm-charts</b></a><br /><sub><code>fix(kube-stack)</code> grant leader election lease RBAC</sub></td>
-<td width="168" align="right"><a href="https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2317"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+41 -41</code></sub><br /><sub>37 files · 2026-07-17</sub></td>
-</tr>
-<tr>
-<td width="44" align="center"><a href="https://github.com/traefik"><img src="https://github.com/traefik.png?size=64" width="28" height="28" alt="traefik" /></a></td>
-<td><a href="https://github.com/traefik/traefik-helm-chart/pull/1933"><b>traefik/traefik-helm-chart</b></a><br /><sub><code>fix(ports)</code> support IPv6 hostIP values</sub></td>
-<td width="168" align="right"><a href="https://github.com/traefik/traefik-helm-chart/pull/1933"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+43 -4</code></sub><br /><sub>2 files · 2026-07-17</sub></td>
-</tr>
-<tr>
-<td width="44" align="center"><a href="https://github.com/grafana"><img src="https://github.com/grafana.png?size=64" width="28" height="28" alt="grafana" /></a></td>
-<td><a href="https://github.com/grafana/docker-otel-lgtm/pull/1596"><b>grafana/docker-otel-lgtm</b></a><br /><sub><code>fix</code> prevent interactive shutdown hangs</sub></td>
-<td width="168" align="right"><a href="https://github.com/grafana/docker-otel-lgtm/pull/1596"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>+50 -6</code></sub><br /><sub>3 files · 2026-07-16</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/grafana/docker-otel-lgtm/pull/1596"><b>grafana/docker-otel-lgtm</b></a>&nbsp;<a href="https://github.com/grafana/docker-otel-lgtm/pull/1596"><img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/pill-merged.svg" width="82" height="24" alt="Merged" /></a><br /><sub><code>fix</code> prevent interactive shutdown hangs</sub><br /><sub><code>+50 -6</code> · 3 files · 2026-07-16</sub></td>
+<td width="50%"></td>
 </tr>
 </table>
 <!-- OSS-PRS:END -->
