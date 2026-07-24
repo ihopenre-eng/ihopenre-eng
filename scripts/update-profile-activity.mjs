@@ -214,7 +214,7 @@ function renderPrs(items) {
 }
 
 function renderCredits(items) {
-  if (!items.length) return '_No public GitHub Advisory credits detected yet. This section updates automatically._';
+  if (!items.length) return '_No public CVE or GitHub Advisory credits detected yet. This section updates automatically._';
   const rows = items.map((entry) =>
     `| [${entry.ghsaId}](${entry.htmlUrl}) | ${escapeCell(entry.summary)} | ${escapeCell((entry.types ?? []).join(', '))} | ${escapeCell(entry.severity ?? 'unknown')} | ${shortDate(entry.publishedAt)} |`,
   );
@@ -230,8 +230,7 @@ function replaceSection(readme, name, content) {
   return readme.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
-const [pullRequests, freshCredits, storedCredits, originalReadme] = await Promise.all([
-  fetchPullRequests(),
+const [freshCredits, storedCredits, originalReadme] = await Promise.all([
   fetchSecurityCredits(),
   readCreditsStore(),
   readFile(README_PATH, 'utf8'),
@@ -240,8 +239,7 @@ const [pullRequests, freshCredits, storedCredits, originalReadme] = await Promis
 const securityCredits = mergeCredits(storedCredits, freshCredits);
 const serializedCredits = `${JSON.stringify(securityCredits, null, 2)}\n`;
 
-let updatedReadme = replaceSection(originalReadme, 'OSS-PRS', renderPrs(pullRequests));
-updatedReadme = replaceSection(updatedReadme, 'SECURITY-CREDITS', renderCredits(securityCredits));
+const updatedReadme = replaceSection(originalReadme, 'SECURITY-CREDITS', renderCredits(securityCredits));
 
 if (updatedReadme !== originalReadme) await writeFile(README_PATH, updatedReadme);
 
@@ -250,4 +248,4 @@ await mkdir(dirname(CREDITS_STORE_PATH), { recursive: true });
 await writeFile(CREDITS_STORE_PATH, serializedCredits);
 
 const state = updatedReadme === originalReadme ? 'already current' : 'updated';
-console.log(`Profile activity ${state}: ${pullRequests.length} PRs, ${securityCredits.length} security credits.`);
+console.log(`Profile activity ${state}: ${securityCredits.length} security credits.`);

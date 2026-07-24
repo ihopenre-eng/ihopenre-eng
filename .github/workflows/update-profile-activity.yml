@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Refresh pull requests and public security credits
+      - name: Refresh public CVE and security credits
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USERNAME: ihopenre-eng
