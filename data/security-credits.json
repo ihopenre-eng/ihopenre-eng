@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "ghsaId": "GHSA-6xj8-qv9j-xcjq",
+    "htmlUrl": "https://github.com/advisories/GHSA-6xj8-qv9j-xcjq",
+    "summary": "Oh My Posh: Arbitrary command execution via template injection in the path segment",
+    "severity": "high",
+    "publishedAt": "2026-07-24T22:36:11Z",
+    "updatedAt": "2026-07-24T22:36:12Z",
+    "types": [
+      "reporter"
+    ]
+  },
+  {
+    "ghsaId": "GHSA-fwjx-9p69-h25h",
+    "htmlUrl": "https://github.com/advisories/GHSA-fwjx-9p69-h25h",
+    "summary": "Oh My Posh: Terminal escape sequence injection via unsanitized prompt segment data",
+    "severity": "medium",
+    "publishedAt": "2026-07-24T22:35:52Z",
+    "updatedAt": "2026-07-24T22:35:54Z",
+    "types": [
+      "reporter"
+    ]
+  }
+]

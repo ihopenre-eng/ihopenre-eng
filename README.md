@@ -2,7 +2,10 @@
 ## CVE & Security Credits
 
 <!-- SECURITY-CREDITS:START -->
-_No public CVE or GitHub Advisory credits detected yet. This section updates automatically._
+| Advisory | Summary | Credit | Severity | Published |
+| :-- | :-- | :-- | :-- | :-- |
+| [GHSA-6xj8-qv9j-xcjq](https://github.com/advisories/GHSA-6xj8-qv9j-xcjq) | Oh My Posh: Arbitrary command execution via template injection in the path segment | reporter | high | 2026-07-24 |
+| [GHSA-fwjx-9p69-h25h](https://github.com/advisories/GHSA-fwjx-9p69-h25h) | Oh My Posh: Terminal escape sequence injection via unsanitized prompt segment data | reporter | medium | 2026-07-24 |
 <!-- SECURITY-CREDITS:END -->
 
 ## Recognition
