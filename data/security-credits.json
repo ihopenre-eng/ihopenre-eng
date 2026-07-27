@@ -1,6 +1,31 @@
 [
   {
+    "ghsaId": "GHSA-rh53-xvx2-j327",
+    "cveId": null,
+    "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327",
+    "summary": "cluster-gateway internal proxy performs no caller authentication and is not read-only — data-plane Secret disclosure and arbitrary Kubernetes mutation",
+    "severity": "critical",
+    "publishedAt": "2026-07-27T12:10:01Z",
+    "updatedAt": "2026-07-27T12:10:01Z",
+    "types": [
+      "reporter"
+    ]
+  },
+  {
+    "ghsaId": "GHSA-52gf-6rpq-fgmx",
+    "cveId": null,
+    "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx",
+    "summary": "Cross-project command execution and wirelog view access via OpenChoreo openchoreo-api exec and wirelogs endpoints",
+    "severity": "high",
+    "publishedAt": "2026-07-27T12:10:52Z",
+    "updatedAt": "2026-07-27T12:10:52Z",
+    "types": [
+      "reporter"
+    ]
+  },
+  {
     "ghsaId": "GHSA-6xj8-qv9j-xcjq",
+    "cveId": null,
     "htmlUrl": "https://github.com/advisories/GHSA-6xj8-qv9j-xcjq",
     "summary": "Oh My Posh: Arbitrary command execution via template injection in the path segment",
     "severity": "high",
@@ -11,7 +36,20 @@
     ]
   },
   {
+    "ghsaId": "GHSA-c5f6-2rm9-2w8g",
+    "cveId": null,
+    "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-c5f6-2rm9-2w8g",
+    "summary": "Unauthenticated build/workflow trigger via git-provider confusion (webhook signature bypass)",
+    "severity": "medium",
+    "publishedAt": "2026-07-27T12:11:20Z",
+    "updatedAt": "2026-07-27T12:11:20Z",
+    "types": [
+      "reporter"
+    ]
+  },
+  {
     "ghsaId": "GHSA-fwjx-9p69-h25h",
+    "cveId": null,
     "htmlUrl": "https://github.com/advisories/GHSA-fwjx-9p69-h25h",
     "summary": "Oh My Posh: Terminal escape sequence injection via unsanitized prompt segment data",
     "severity": "medium",
