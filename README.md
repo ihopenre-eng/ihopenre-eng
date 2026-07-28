@@ -31,3 +31,10 @@
 ## Project
 
 **[HAKCA](https://hakca.vn/)** — Study-café reservation platform.
+
+## GitHub Activity
+
+<p>
+  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/github-activity.svg" height="160" alt="Public GitHub activity for the last 12 months" />
+  <img src="https://raw.githubusercontent.com/ihopenre-eng/ihopenre-eng/main/assets/top-languages.svg" height="160" alt="Top languages across public repositories" />
+</p>
