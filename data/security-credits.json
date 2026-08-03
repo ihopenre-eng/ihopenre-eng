@@ -12,30 +12,6 @@
     ]
   },
   {
-    "ghsaId": "GHSA-2h2h-x28v-ffqm",
-    "cveId": null,
-    "htmlUrl": "https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-2h2h-x28v-ffqm",
-    "summary": " Official production Docker Compose deployment exposes PostgreSQL superuser with hard-coded credentials, enabling     unauthenticated RCE",
-    "severity": "critical",
-    "publishedAt": null,
-    "updatedAt": "2026-07-15T19:42:47Z",
-    "types": [
-      "reporter"
-    ]
-  },
-  {
-    "ghsaId": "GHSA-xr4w-wrc4-5vhf",
-    "cveId": null,
-    "htmlUrl": "https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-xr4w-wrc4-5vhf",
-    "summary": " Official production Docker Compose deployment exposes PostgreSQL superuser with hard-coded credentials, enabling unauthenticated RCE",
-    "severity": "critical",
-    "publishedAt": null,
-    "updatedAt": "2026-07-15T19:42:32Z",
-    "types": [
-      "reporter"
-    ]
-  },
-  {
     "ghsaId": "GHSA-52gf-6rpq-fgmx",
     "cveId": null,
     "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx",

@@ -51,6 +51,8 @@ function isMyCredit(credit) {
 }
 
 function toCredit(advisory) {
+  if (advisory.state && advisory.state !== 'published') return null;
+  if (!advisory.published_at) return null;
   const credits = (advisory.credits ?? []).filter(isMyCredit);
   if (!credits.length) return null;
 
