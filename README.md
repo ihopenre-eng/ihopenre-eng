@@ -7,6 +7,12 @@
 - **[GHSA-rh53-xvx2-j327](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327)** · `CRITICAL`<br />
   <sub>cluster-gateway internal proxy performs no caller authentication and is not read-only — data-plane Secret disclosure and arbitrary Kubernetes mutation · reporter · 2026-07-27</sub>
 
+- **[GHSA-2h2h-x28v-ffqm](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-2h2h-x28v-ffqm)** · `CRITICAL`<br />
+  <sub>Official production Docker Compose deployment exposes PostgreSQL superuser with hard-coded credentials, enabling     unauthenticated RCE · reporter · -</sub>
+
+- **[GHSA-xr4w-wrc4-5vhf](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-xr4w-wrc4-5vhf)** · `CRITICAL`<br />
+  <sub>Official production Docker Compose deployment exposes PostgreSQL superuser with hard-coded credentials, enabling unauthenticated RCE · reporter · -</sub>
+
 - **[GHSA-52gf-6rpq-fgmx](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx)** · `HIGH`<br />
   <sub>Cross-project command execution and wirelog view access via OpenChoreo openchoreo-api exec and wirelogs endpoints · reporter · 2026-07-27</sub>
 
@@ -18,6 +24,9 @@
 
 - **[GHSA-fwjx-9p69-h25h](https://github.com/advisories/GHSA-fwjx-9p69-h25h)** · `MEDIUM`<br />
   <sub>Oh My Posh: Terminal escape sequence injection via unsanitized prompt segment data · reporter · 2026-07-24</sub>
+
+- **[GHSA-6rg8-xpvg-m49w](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-6rg8-xpvg-m49w)** · `LOW`<br />
+  <sub>Authentication rate-limit bypass via spoofed proxy headers enables unlimited password attempts · reporter · 2026-08-03</sub>
 <!-- SECURITY-CREDITS:END -->
 
 ## Recognition
