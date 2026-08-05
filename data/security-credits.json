@@ -12,6 +12,30 @@
     ]
   },
   {
+    "ghsaId": "GHSA-hj4x-hm4v-7wpw",
+    "cveId": null,
+    "htmlUrl": "https://github.com/updatecli/updatecli/security/advisories/GHSA-hj4x-hm4v-7wpw",
+    "summary": "file target does not confine writes to the working directory — path traversal / arbitrary file write via source-templated path",
+    "severity": "high",
+    "publishedAt": "2026-08-05T12:24:52Z",
+    "updatedAt": "2026-08-05T12:24:52Z",
+    "types": [
+      "reporter"
+    ]
+  },
+  {
+    "ghsaId": "GHSA-gc47-hwcc-8qp4",
+    "cveId": null,
+    "htmlUrl": "https://github.com/updatecli/updatecli/security/advisories/GHSA-gc47-hwcc-8qp4",
+    "summary": "Credential-bearing URLs (HTTP Basic Auth userinfo / git remotes) written to console and CI logs without redaction across the http resource and git SCM",
+    "severity": "high",
+    "publishedAt": "2026-08-05T12:23:41Z",
+    "updatedAt": "2026-08-05T12:23:41Z",
+    "types": [
+      "reporter"
+    ]
+  },
+  {
     "ghsaId": "GHSA-52gf-6rpq-fgmx",
     "cveId": null,
     "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx",
