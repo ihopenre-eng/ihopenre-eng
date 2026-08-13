@@ -133,6 +133,24 @@ async function readCreditsStore() {
   }
 }
 
+// A CVE can be assigned weeks after the original GHSA publication. Refresh every
+// tracked no-CVE advisory directly so the short global-advisory lookback does not
+// leave the profile with a stale GHSA-only identifier.
+async function refreshTrackedCredits(items) {
+  const refreshable = items.filter((item) => item?.ghsaId && !item.cveId);
+  const refreshed = await Promise.all(refreshable.map(async (item) => {
+    try {
+      const { data } = await api(`https://api.github.com/advisories/${item.ghsaId}`);
+      return toCredit(data) ?? item;
+    } catch (error) {
+      // Repository-only advisories may not be in the global database yet.
+      console.warn(`Keeping stored advisory ${item.ghsaId}: ${error.message}`);
+      return item;
+    }
+  }));
+  return refreshed;
+}
+
 function mergeCredits(stored, fetched) {
   const merged = new Map(stored.map((entry) => [entry.ghsaId, entry]));
   for (const entry of fetched) merged.set(entry.ghsaId, entry);
@@ -159,13 +177,16 @@ function replaceSection(readme, name, content) {
   return readme.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
-const [freshCredits, storedCredits, originalReadme] = await Promise.all([
-  fetchSecurityCredits(),
+const [storedCredits, originalReadme] = await Promise.all([
   readCreditsStore(),
   readFile(README_PATH, 'utf8'),
 ]);
+const [freshCredits, refreshedCredits] = await Promise.all([
+  fetchSecurityCredits(),
+  refreshTrackedCredits(storedCredits),
+]);
 
-const securityCredits = mergeCredits(storedCredits, freshCredits);
+const securityCredits = mergeCredits(storedCredits, [...freshCredits, ...refreshedCredits]);
 const serializedCredits = `${JSON.stringify(securityCredits, null, 2)}\n`;
 const updatedReadme = replaceSection(originalReadme, 'SECURITY-CREDITS', renderCredits(securityCredits));
 

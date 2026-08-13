@@ -16,13 +16,13 @@
 - **[GHSA-52gf-6rpq-fgmx](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx)** · `HIGH`<br />
   <sub>Cross-project command execution and wirelog view access via OpenChoreo openchoreo-api exec and wirelogs endpoints · reporter · 2026-07-27</sub>
 
-- **[GHSA-6xj8-qv9j-xcjq](https://github.com/advisories/GHSA-6xj8-qv9j-xcjq)** · `HIGH`<br />
+- **[CVE-2026-73505 · GHSA-6xj8-qv9j-xcjq](https://github.com/advisories/GHSA-6xj8-qv9j-xcjq)** · `HIGH`<br />
   <sub>Oh My Posh: Arbitrary command execution via template injection in the path segment · reporter · 2026-07-24</sub>
 
 - **[GHSA-c5f6-2rm9-2w8g](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-c5f6-2rm9-2w8g)** · `MEDIUM`<br />
   <sub>Unauthenticated build/workflow trigger via git-provider confusion (webhook signature bypass) · reporter · 2026-07-27</sub>
 
-- **[GHSA-fwjx-9p69-h25h](https://github.com/advisories/GHSA-fwjx-9p69-h25h)** · `MEDIUM`<br />
+- **[CVE-2026-73506 · GHSA-fwjx-9p69-h25h](https://github.com/advisories/GHSA-fwjx-9p69-h25h)** · `MEDIUM`<br />
   <sub>Oh My Posh: Terminal escape sequence injection via unsanitized prompt segment data · reporter · 2026-07-24</sub>
 
 - **[GHSA-6rg8-xpvg-m49w](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-6rg8-xpvg-m49w)** · `LOW`<br />
