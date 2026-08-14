@@ -166,7 +166,7 @@ function renderCredits(items) {
   if (!items.length) return '_No public CVE or GitHub Advisory credits detected yet. This section updates automatically._';
 
   return items.map((entry) => {
-    const identifier = entry.cveId ? `${entry.cveId} · ${entry.ghsaId}` : entry.ghsaId;
+    const identifier = entry.cveId ?? entry.ghsaId;
     const severity = String(entry.severity ?? 'unknown').toUpperCase();
     const credit = (entry.types ?? []).join(', ');
     return `- **[${identifier}](${entry.htmlUrl})** · \`${severity}\`<br />\n  <sub>${escapeHtml(entry.summary)} · ${escapeHtml(credit)} · ${shortDate(entry.publishedAt)}</sub>`;

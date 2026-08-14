@@ -4,7 +4,7 @@
 <sub>Public CVE and GitHub Security Advisory credits.</sub>
 
 <!-- SECURITY-CREDITS:START -->
-- **[CVE-2026-73842 · GHSA-rh53-xvx2-j327](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327)** · `CRITICAL`<br />
+- **[CVE-2026-73842](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327)** · `CRITICAL`<br />
   <sub>cluster-gateway internal proxy performs no caller authentication and is not read-only — data-plane Secret disclosure and arbitrary Kubernetes mutation · reporter · 2026-07-27</sub>
 
 - **[GHSA-hj4x-hm4v-7wpw](https://github.com/updatecli/updatecli/security/advisories/GHSA-hj4x-hm4v-7wpw)** · `HIGH`<br />
@@ -13,16 +13,16 @@
 - **[GHSA-gc47-hwcc-8qp4](https://github.com/updatecli/updatecli/security/advisories/GHSA-gc47-hwcc-8qp4)** · `HIGH`<br />
   <sub>Credential-bearing URLs (HTTP Basic Auth userinfo / git remotes) written to console and CI logs without redaction across the http resource and git SCM · reporter · 2026-08-05</sub>
 
-- **[CVE-2026-73841 · GHSA-52gf-6rpq-fgmx](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx)** · `HIGH`<br />
+- **[CVE-2026-73841](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx)** · `HIGH`<br />
   <sub>Cross-project command execution and wirelog view access via OpenChoreo openchoreo-api exec and wirelogs endpoints · reporter · 2026-07-27</sub>
 
-- **[CVE-2026-73505 · GHSA-6xj8-qv9j-xcjq](https://github.com/advisories/GHSA-6xj8-qv9j-xcjq)** · `HIGH`<br />
+- **[CVE-2026-73505](https://github.com/advisories/GHSA-6xj8-qv9j-xcjq)** · `HIGH`<br />
   <sub>Oh My Posh: Arbitrary command execution via template injection in the path segment · reporter · 2026-07-24</sub>
 
-- **[CVE-2026-73840 · GHSA-c5f6-2rm9-2w8g](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-c5f6-2rm9-2w8g)** · `MEDIUM`<br />
+- **[CVE-2026-73840](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-c5f6-2rm9-2w8g)** · `MEDIUM`<br />
   <sub>Unauthenticated build/workflow trigger via git-provider confusion (webhook signature bypass) · reporter · 2026-07-27</sub>
 
-- **[CVE-2026-73506 · GHSA-fwjx-9p69-h25h](https://github.com/advisories/GHSA-fwjx-9p69-h25h)** · `MEDIUM`<br />
+- **[CVE-2026-73506](https://github.com/advisories/GHSA-fwjx-9p69-h25h)** · `MEDIUM`<br />
   <sub>Oh My Posh: Terminal escape sequence injection via unsanitized prompt segment data · reporter · 2026-07-24</sub>
 
 - **[GHSA-6rg8-xpvg-m49w](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-6rg8-xpvg-m49w)** · `LOW`<br />
