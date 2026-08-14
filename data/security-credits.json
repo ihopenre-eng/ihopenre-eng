@@ -1,12 +1,12 @@
 [
   {
     "ghsaId": "GHSA-rh53-xvx2-j327",
-    "cveId": null,
+    "cveId": "CVE-2026-73842",
     "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327",
     "summary": "cluster-gateway internal proxy performs no caller authentication and is not read-only — data-plane Secret disclosure and arbitrary Kubernetes mutation",
     "severity": "critical",
     "publishedAt": "2026-07-27T12:10:01Z",
-    "updatedAt": "2026-07-27T12:10:01Z",
+    "updatedAt": "2026-08-13T21:57:47Z",
     "types": [
       "reporter"
     ]
@@ -37,12 +37,12 @@
   },
   {
     "ghsaId": "GHSA-52gf-6rpq-fgmx",
-    "cveId": null,
+    "cveId": "CVE-2026-73841",
     "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx",
     "summary": "Cross-project command execution and wirelog view access via OpenChoreo openchoreo-api exec and wirelogs endpoints",
     "severity": "high",
     "publishedAt": "2026-07-27T12:10:52Z",
-    "updatedAt": "2026-07-27T12:10:52Z",
+    "updatedAt": "2026-08-13T21:55:02Z",
     "types": [
       "reporter"
     ]
@@ -61,12 +61,12 @@
   },
   {
     "ghsaId": "GHSA-c5f6-2rm9-2w8g",
-    "cveId": null,
+    "cveId": "CVE-2026-73840",
     "htmlUrl": "https://github.com/openchoreo/openchoreo/security/advisories/GHSA-c5f6-2rm9-2w8g",
     "summary": "Unauthenticated build/workflow trigger via git-provider confusion (webhook signature bypass)",
     "severity": "medium",
     "publishedAt": "2026-07-27T12:11:20Z",
-    "updatedAt": "2026-07-27T12:11:20Z",
+    "updatedAt": "2026-08-13T21:50:51Z",
     "types": [
       "reporter"
     ]

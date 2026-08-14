@@ -153,7 +153,12 @@ async function refreshTrackedCredits(items) {
 
 function mergeCredits(stored, fetched) {
   const merged = new Map(stored.map((entry) => [entry.ghsaId, entry]));
-  for (const entry of fetched) merged.set(entry.ghsaId, entry);
+  for (const entry of fetched) {
+    const existing = merged.get(entry.ghsaId);
+    // Repository APIs can lag behind a CVE assignment. Keep a known CVE until
+    // the source API supplies its own identifier instead of regressing to null.
+    merged.set(entry.ghsaId, existing?.cveId && !entry.cveId ? { ...entry, cveId: existing.cveId } : entry);
+  }
   return [...merged.values()].sort(byImportance);
 }
 
