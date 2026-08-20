@@ -165,12 +165,27 @@ function mergeCredits(stored, fetched) {
 function renderCredits(items) {
   if (!items.length) return '_No public CVE or GitHub Advisory credits detected yet. This section updates automatically._';
 
-  return items.map((entry) => {
-    const identifier = entry.cveId ?? entry.ghsaId;
-    const severity = String(entry.severity ?? 'unknown').toUpperCase();
-    const credit = (entry.types ?? []).join(', ');
-    return `- **[${identifier}](${entry.htmlUrl})** · \`${severity}\`<br />\n  <sub>${escapeHtml(entry.summary)} · ${escapeHtml(credit)} · ${shortDate(entry.publishedAt)}</sub>`;
-  }).join('\n\n');
+  const groups = new Map([
+    ['CVE', []],
+    ['GHSA', []],
+    ['KVE', []],
+  ]);
+
+  for (const entry of items) {
+    const cveId = String(entry.cveId ?? '');
+    const kveId = String(entry.kveId ?? '');
+    if (cveId.startsWith('CVE-')) groups.get('CVE').push({ entry, identifier: cveId });
+    else if (kveId.startsWith('KVE-') || cveId.startsWith('KVE-')) groups.get('KVE').push({ entry, identifier: kveId || cveId });
+    else groups.get('GHSA').push({ entry, identifier: entry.ghsaId });
+  }
+
+  return [...groups.entries()]
+    .filter(([, entries]) => entries.length)
+    .map(([name, entries]) => [
+      `#### ${name}`,
+      ...entries.map(({ entry, identifier }) => `- **[${identifier}](${entry.htmlUrl})** · \`${String(entry.severity ?? 'unknown').toUpperCase()}\``),
+    ].join('\n'))
+    .join('\n\n');
 }
 
 function replaceSection(readme, name, content) {
