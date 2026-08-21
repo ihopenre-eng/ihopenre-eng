@@ -42,7 +42,7 @@
     "summary": "Cross-project command execution and wirelog view access via OpenChoreo openchoreo-api exec and wirelogs endpoints",
     "severity": "high",
     "publishedAt": "2026-07-27T12:10:52Z",
-    "updatedAt": "2026-08-13T21:55:02Z",
+    "updatedAt": "2026-08-21T09:28:36Z",
     "types": [
       "reporter"
     ]
