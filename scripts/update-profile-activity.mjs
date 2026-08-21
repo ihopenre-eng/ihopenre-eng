@@ -179,13 +179,20 @@ function renderCredits(items) {
     else groups.get('GHSA').push({ entry, identifier: entry.ghsaId });
   }
 
-  return [...groups.entries()]
-    .filter(([, entries]) => entries.length)
-    .map(([name, entries]) => [
-      `#### ${name}`,
-      ...entries.map(({ entry, identifier }) => `- **[${identifier}](${entry.htmlUrl})** · \`${String(entry.severity ?? 'unknown').toUpperCase()}\``),
-    ].join('\n'))
-    .join('\n\n');
+  const populated = [...groups.entries()].filter(([, entries]) => entries.length);
+  const columnWidth = Math.floor(100 / populated.length);
+  const cells = populated.map(([name, entries]) => [
+    `<td width="${columnWidth}%" valign="top">`,
+    `<strong>${name}</strong>`,
+    '<ul>',
+    ...entries.map(({ entry, identifier }) =>
+      `<li><a href="${escapeHtml(entry.htmlUrl)}"><code>${escapeHtml(identifier)}</code></a> · <code>${String(entry.severity ?? 'unknown').toUpperCase()}</code></li>`,
+    ),
+    '</ul>',
+    '</td>',
+  ].join('\n'));
+
+  return ['<table>', '<tr>', ...cells, '</tr>', '</table>'].join('\n');
 }
 
 function replaceSection(readme, name, content) {
