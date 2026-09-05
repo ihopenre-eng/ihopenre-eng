@@ -13,7 +13,7 @@
   },
   {
     "ghsaId": "GHSA-hj4x-hm4v-7wpw",
-    "cveId": null,
+    "cveId": "CVE-2026-86069",
     "htmlUrl": "https://github.com/updatecli/updatecli/security/advisories/GHSA-hj4x-hm4v-7wpw",
     "summary": "file target does not confine writes to the working directory — path traversal / arbitrary file write via source-templated path",
     "severity": "high",
@@ -25,7 +25,7 @@
   },
   {
     "ghsaId": "GHSA-gc47-hwcc-8qp4",
-    "cveId": null,
+    "cveId": "CVE-2026-86070",
     "htmlUrl": "https://github.com/updatecli/updatecli/security/advisories/GHSA-gc47-hwcc-8qp4",
     "summary": "Credential-bearing URLs (HTTP Basic Auth userinfo / git remotes) written to console and CI logs without redaction across the http resource and git SCM",
     "severity": "high",
