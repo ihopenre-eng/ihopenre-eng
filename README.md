@@ -11,6 +11,7 @@
 - [CVE-2026-73506](https://github.com/advisories/GHSA-fwjx-9p69-h25h) · MEDIUM
 
 **GHSA**
+- [GHSA-w4v4-9rw7-5326](https://github.com/traefik/traefik/security/advisories/GHSA-w4v4-9rw7-5326) · HIGH
 - [GHSA-6rg8-xpvg-m49w](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-6rg8-xpvg-m49w) · LOW
 <!-- SECURITY-CREDITS:END -->
 

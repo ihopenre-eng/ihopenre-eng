@@ -7,7 +7,7 @@ const TOKEN = process.env.GITHUB_TOKEN;
 const CREDITS_STORE_PATH = process.env.PROFILE_CREDITS_STORE ?? 'data/security-credits.json';
 const ADVISORY_LOOKBACK_DAYS = Number(process.env.ADVISORY_LOOKBACK_DAYS ?? 14);
 const MAX_ADVISORY_PAGES = Number(process.env.MAX_ADVISORY_PAGES ?? 10);
-const REPOSITORY_ADVISORY_SOURCES = (process.env.PROFILE_ADVISORY_REPOSITORIES ?? 'openchoreo/openchoreo,hatchet-dev/hatchet,updatecli/updatecli')
+const REPOSITORY_ADVISORY_SOURCES = (process.env.PROFILE_ADVISORY_REPOSITORIES ?? 'openchoreo/openchoreo,hatchet-dev/hatchet,updatecli/updatecli,traefik/traefik')
   .split(',')
   .map((repository) => repository.trim())
   .filter(Boolean);
