@@ -1,5 +1,3 @@
-
-## Security Reports
 <!-- SECURITY-CREDITS:START -->
 **CVE**
 - [CVE-2026-73842](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327) · CRITICAL
