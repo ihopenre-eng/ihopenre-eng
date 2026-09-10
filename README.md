@@ -12,9 +12,6 @@
 - [GHSA-w4v4-9rw7-5326](https://github.com/traefik/traefik/security/advisories/GHSA-w4v4-9rw7-5326) · HIGH
 - [GHSA-6rg8-xpvg-m49w](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-6rg8-xpvg-m49w) · LOW
 <!-- SECURITY-CREDITS:END -->
-
-## Recognition
-
 <p>
   <a href="https://www.holopin.io/userbadge/cmrt2gcmm0006l2042ttekvo7"><img src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbHJxaGU4aGMzNjU4MGZqd3dsZHgxaG93IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=" width="140" alt="Dapr Runtime Contributor badge" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.holopin.io/userbadge/cms303a4m0001ld047ftsaal1"><img src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbHJxZ3lkdnM1NTk4MGZqdng3bTkxYjg0IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=" width="140" alt="Dapr Quickstarts Contributor badge" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
