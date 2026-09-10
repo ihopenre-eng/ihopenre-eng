@@ -1,6 +1,7 @@
 <!-- SECURITY-CREDITS:START -->
 **CVE**
 - [CVE-2026-73842](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327) · CRITICAL
+- [CVE-2026-88008](https://github.com/traefik/traefik/security/advisories/GHSA-w4v4-9rw7-5326) · HIGH
 - [CVE-2026-86069](https://github.com/updatecli/updatecli/security/advisories/GHSA-hj4x-hm4v-7wpw) · HIGH
 - [CVE-2026-86070](https://github.com/updatecli/updatecli/security/advisories/GHSA-gc47-hwcc-8qp4) · HIGH
 - [CVE-2026-73841](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-52gf-6rpq-fgmx) · HIGH
@@ -9,7 +10,6 @@
 - [CVE-2026-73506](https://github.com/advisories/GHSA-fwjx-9p69-h25h) · MEDIUM
 
 **GHSA**
-- [GHSA-w4v4-9rw7-5326](https://github.com/traefik/traefik/security/advisories/GHSA-w4v4-9rw7-5326) · HIGH
 - [GHSA-6rg8-xpvg-m49w](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-6rg8-xpvg-m49w) · LOW
 <!-- SECURITY-CREDITS:END -->
 

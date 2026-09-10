@@ -13,12 +13,12 @@
   },
   {
     "ghsaId": "GHSA-w4v4-9rw7-5326",
-    "cveId": null,
+    "cveId": "CVE-2026-88008",
     "htmlUrl": "https://github.com/traefik/traefik/security/advisories/GHSA-w4v4-9rw7-5326",
     "summary": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') and Incorrect Authorization in github.com/traefik/traefik/v3",
     "severity": "high",
     "publishedAt": "2026-09-07T09:24:06Z",
-    "updatedAt": "2026-09-07T09:24:06Z",
+    "updatedAt": "2026-09-10T14:55:52Z",
     "types": [
       "reporter"
     ]
