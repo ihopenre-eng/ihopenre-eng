@@ -13,7 +13,7 @@
 - [GHSA-6rg8-xpvg-m49w](https://github.com/hatchet-dev/hatchet/security/advisories/GHSA-6rg8-xpvg-m49w) · Hatchet: authentication rate-limit bypass via spoofed proxy headers (LOW)
 <!-- SECURITY-CREDITS:END -->
 
-**badge**
+**Badge**
 
 <p>
   <a href="https://www.holopin.io/userbadge/cmrt2gcmm0006l2042ttekvo7"><img src="https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbHJxaGU4aGMzNjU4MGZqd3dsZHgxaG93IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=" width="140" alt="Dapr Runtime Contributor badge" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
