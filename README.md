@@ -1,5 +1,5 @@
 <!-- SECURITY-CREDITS:START -->
-## CVE
+**CVE**
 - [CVE-2026-73842](https://github.com/openchoreo/openchoreo/security/advisories/GHSA-rh53-xvx2-j327) · OpenChoreo: cluster-gateway data-plane Secret disclosure and arbitrary Kubernetes mutation (CRITICAL)
 - [CVE-2026-88008](https://github.com/traefik/traefik/security/advisories/GHSA-w4v4-9rw7-5326) · Traefik: h2c HTTP request smuggling and authorization bypass (HIGH)
 - [CVE-2026-86069](https://github.com/updatecli/updatecli/security/advisories/GHSA-hj4x-hm4v-7wpw) · updatecli: file target path traversal to arbitrary file write (HIGH)
