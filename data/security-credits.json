@@ -9,7 +9,8 @@
     "updatedAt": "2026-08-13T21:57:47Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "OpenChoreo: cluster-gateway data-plane Secret disclosure and arbitrary Kubernetes mutation"
   },
   {
     "ghsaId": "GHSA-w4v4-9rw7-5326",
@@ -21,7 +22,8 @@
     "updatedAt": "2026-09-10T14:55:52Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "Traefik: h2c HTTP request smuggling and authorization bypass"
   },
   {
     "ghsaId": "GHSA-hj4x-hm4v-7wpw",
@@ -33,7 +35,8 @@
     "updatedAt": "2026-09-04T21:41:11Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "updatecli: file target path traversal to arbitrary file write"
   },
   {
     "ghsaId": "GHSA-gc47-hwcc-8qp4",
@@ -45,7 +48,8 @@
     "updatedAt": "2026-09-04T21:41:16Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "updatecli: credential-bearing URLs leaked to console and CI logs"
   },
   {
     "ghsaId": "GHSA-52gf-6rpq-fgmx",
@@ -57,7 +61,8 @@
     "updatedAt": "2026-08-21T09:28:36Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "OpenChoreo: cross-project command execution and wirelog access"
   },
   {
     "ghsaId": "GHSA-6xj8-qv9j-xcjq",
@@ -69,7 +74,8 @@
     "updatedAt": "2026-08-13T14:22:04Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "Oh My Posh: arbitrary command execution via path template injection"
   },
   {
     "ghsaId": "GHSA-c5f6-2rm9-2w8g",
@@ -81,7 +87,8 @@
     "updatedAt": "2026-08-13T21:50:51Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "OpenChoreo: unauthenticated build trigger via webhook signature bypass"
   },
   {
     "ghsaId": "GHSA-fwjx-9p69-h25h",
@@ -93,7 +100,8 @@
     "updatedAt": "2026-08-13T14:23:13Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "Oh My Posh: terminal escape sequence injection in prompt segments"
   },
   {
     "ghsaId": "GHSA-6rg8-xpvg-m49w",
@@ -105,6 +113,7 @@
     "updatedAt": "2026-08-03T15:35:35Z",
     "types": [
       "reporter"
-    ]
+    ],
+    "title": "Hatchet: authentication rate-limit bypass via spoofed proxy headers"
   }
 ]

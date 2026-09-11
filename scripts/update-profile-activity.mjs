@@ -157,7 +157,8 @@ function mergeCredits(stored, fetched) {
     const existing = merged.get(entry.ghsaId);
     // Repository APIs can lag behind a CVE assignment. Keep a known CVE until
     // the source API supplies its own identifier instead of regressing to null.
-    merged.set(entry.ghsaId, existing?.cveId && !entry.cveId ? { ...entry, cveId: existing.cveId } : entry);
+    // `title` is hand-written in the credits store, never returned by the API.
+    merged.set(entry.ghsaId, { ...entry, cveId: existing?.cveId && !entry.cveId ? existing.cveId : entry.cveId, title: entry.title ?? existing?.title });
   }
   return [...merged.values()].sort(byImportance);
 }
@@ -183,7 +184,7 @@ function renderCredits(items) {
   return populated.map(([name, entries]) => [
     `**${name}**`,
     ...entries.map(({ entry, identifier }) =>
-      `- [${identifier}](${entry.htmlUrl}) · ${String(entry.severity ?? 'unknown').toUpperCase()}`,
+      `- [${identifier}](${entry.htmlUrl}) · ${entry.title ?? entry.summary} (${String(entry.severity ?? 'unknown').toUpperCase()})`,
     ),
   ].join('\n')).join('\n\n');
 }
