@@ -63,7 +63,7 @@
     <ellipse cx="471" cy="186" rx="290" ry="153" fill="url(#light)"/>
     <path d="M0 49H840M0 271H840" stroke="#262b30"/>
     <circle cx="27" cy="25" r="3" fill="#d9bc85"/>
-    <text x="42" y="29" fill="#dce1e5" font-size="11" letter-spacing="1.6">THE LITTLE PATCH LAB</text>
+    <text x="42" y="29" fill="#dce1e5" font-size="11" letter-spacing="1.6">The little Potato</text>
     <text x="811" y="29" text-anchor="end" class="label">lshdf / 001</text>
 
     <!-- 실험실 선반과 작은 장비 -->
