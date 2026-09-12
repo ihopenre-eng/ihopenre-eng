@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320" role="img" aria-labelledby="title desc">
-  <title id="title">The little patch lab</title>
+  <title id="title">The little Potato</title>
   <desc id="desc">A potato engineer finds a wandering bug, patches it, and turns the build green. A twelve-second animated miniature, made with SVG and CSS.</desc>
   <defs>
     <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#101317"/><stop offset="1" stop-color="#090b0d"/></linearGradient>
