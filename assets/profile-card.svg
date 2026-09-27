@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="260" viewBox="0 0 1080 260" role="img" aria-labelledby="title desc">
+  <title id="title">Lee Seonghyeon — Security Research and Open-Source Engineering</title>
+  <desc id="desc">A portfolio introduction card for Lee Seonghyeon, focused on responsible disclosure, secure systems, and developer tooling.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#161b22"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#a371f7"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1078" height="258" rx="16" fill="url(#surface)" stroke="#30363d" stroke-width="2"/>
+  <rect x="42" y="42" width="176" height="176" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <path d="M88 88h84v84H88z" fill="none" stroke="url(#line)" stroke-width="3"/>
+  <path d="M109 109h42v42h-42z" fill="none" stroke="#c9d1d9" stroke-width="3"/>
+  <path d="M130 76v20m0 68v20M76 130h20m68 0h20" stroke="#8b949e" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="130" cy="130" r="8" fill="#58a6ff"/>
+  <path d="M130 99v62M99 130h62" stroke="#58a6ff" stroke-width="2" opacity=".45"/>
+  <path d="M262 83h744" stroke="#30363d"/>
+  <text x="262" y="121" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="700" letter-spacing="-.5">Lee Seonghyeon <tspan fill="#8b949e" font-weight="400">· 이성현</tspan></text>
+  <text x="262" y="158" fill="#79c0ff" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" letter-spacing="1.8">SECURITY RESEARCH · OPEN-SOURCE ENGINEERING</text>
+  <text x="262" y="195" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="17">Responsible disclosure, secure systems, and developer tooling.</text>
+  <text x="1006" y="230" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" letter-spacing="1.2">LSHDF / PORTFOLIO</text>
+</svg>
