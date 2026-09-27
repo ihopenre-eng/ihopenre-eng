@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="260" viewBox="0 0 1080 260" role="img" aria-labelledby="title desc">
-  <title id="title">Lee Seonghyeon — Security Research and Open-Source Engineering</title>
-  <desc id="desc">A portfolio introduction card for Lee Seonghyeon, focused on responsible disclosure, secure systems, and developer tooling.</desc>
+  <title id="title">Lee Seonghyeon — Profile and technical stack</title>
+  <desc id="desc">A concise portfolio card listing Lee Seonghyeon's name, role, and primary technical stack.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#161b22"/>
@@ -12,15 +12,16 @@
     </linearGradient>
   </defs>
   <rect x="1" y="1" width="1078" height="258" rx="16" fill="url(#surface)" stroke="#30363d" stroke-width="2"/>
-  <rect x="42" y="42" width="176" height="176" rx="12" fill="#0d1117" stroke="#30363d"/>
-  <path d="M88 88h84v84H88z" fill="none" stroke="url(#line)" stroke-width="3"/>
-  <path d="M109 109h42v42h-42z" fill="none" stroke="#c9d1d9" stroke-width="3"/>
-  <path d="M130 76v20m0 68v20M76 130h20m68 0h20" stroke="#8b949e" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="130" cy="130" r="8" fill="#58a6ff"/>
-  <path d="M130 99v62M99 130h62" stroke="#58a6ff" stroke-width="2" opacity=".45"/>
-  <path d="M262 83h744" stroke="#30363d"/>
-  <text x="262" y="121" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="700" letter-spacing="-.5">Lee Seonghyeon <tspan fill="#8b949e" font-weight="400">· 이성현</tspan></text>
-  <text x="262" y="158" fill="#79c0ff" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" letter-spacing="1.8">SECURITY RESEARCH · OPEN-SOURCE ENGINEERING</text>
-  <text x="262" y="195" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="17">Responsible disclosure, secure systems, and developer tooling.</text>
-  <text x="1006" y="230" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" letter-spacing="1.2">LSHDF / PORTFOLIO</text>
+  <text x="44" y="55" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" letter-spacing="1.7">PROFILE / LSHDF</text>
+  <path d="M44 77H1036" stroke="#30363d"/>
+  <text x="44" y="125" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="37" font-weight="700" letter-spacing="-.6">Lee Seonghyeon <tspan fill="#8b949e" font-weight="400">· 이성현</tspan></text>
+  <text x="44" y="158" fill="#79c0ff" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" letter-spacing="1.25">SECURITY RESEARCHER · OPEN-SOURCE ENGINEER</text>
+  <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" text-anchor="middle">
+    <rect x="44" y="183" width="68" height="32" rx="16" fill="#1f6feb" fill-opacity=".16" stroke="#1f6feb" stroke-opacity=".6"/><text x="78" y="204" fill="#79c0ff">Go</text>
+    <rect x="124" y="183" width="92" height="32" rx="16" fill="#8957e5" fill-opacity=".14" stroke="#8957e5" stroke-opacity=".55"/><text x="170" y="204" fill="#d2a8ff">Python</text>
+    <rect x="228" y="183" width="124" height="32" rx="16" fill="#d29922" fill-opacity=".12" stroke="#d29922" stroke-opacity=".55"/><text x="290" y="204" fill="#e3b341">TypeScript</text>
+    <rect x="364" y="183" width="120" height="32" rx="16" fill="#388bfd" fill-opacity=".12" stroke="#388bfd" stroke-opacity=".55"/><text x="424" y="204" fill="#79c0ff">Kubernetes</text>
+    <rect x="496" y="183" width="146" height="32" rx="16" fill="#2ea043" fill-opacity=".12" stroke="#2ea043" stroke-opacity=".55"/><text x="569" y="204" fill="#7ee787">App Security</text>
+  </g>
+  <text x="1036" y="215" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" letter-spacing="1.2">PORTFOLIO / 2026</text>
 </svg>
