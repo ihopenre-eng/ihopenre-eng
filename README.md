@@ -2,4 +2,4 @@
 
 `Go` · `Python` · `TypeScript` · `Kubernetes` · `Application Security`
 
-/ihopenre.is-a.dev
+://ihopenre.is-a.dev
