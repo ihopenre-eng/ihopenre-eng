@@ -18,7 +18,7 @@
 
 - CVE-2026-100401 — Rate Limit Bypass — Low
 
-### GitHub Security Advisories
+### GHSA
 
 - GHSA-wr5q-7wwx-x568 — Authentication Bypass — Critical
 
