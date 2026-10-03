@@ -18,11 +18,6 @@
 
  CVE-2026-100401 
 
-### GHSA
----
- GHSA-wr5q-7wwx-x568 
-
-
 
 
 [View Portfolio →](https://ihopenre.is-a.dev/)
