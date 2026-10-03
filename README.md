@@ -1,26 +1,26 @@
 ### CVEs
 
-- CVE-2026-73842 — Authentication Bypass — Critical
+- CVE-2026-73842 
 
-- CVE-2026-88008 — HTTP Request Smuggling — High
+- CVE-2026-88008 
 
-- CVE-2026-86070 — Credential Exposure — High
+- CVE-2026-86070 
 
-- CVE-2026-86069 — Path Traversal — High
+- CVE-2026-86069 
 
-- CVE-2026-73841 — Authorization Bypass — High
+- CVE-2026-73841 
 
-- CVE-2026-73505 — Command Injection — High
+- CVE-2026-73505 
 
-- CVE-2026-73840 — Webhook Authentication Bypass — Medium
+- CVE-2026-73840 
 
-- CVE-2026-73506 — Terminal Escape Injection — Medium
+- CVE-2026-73506 
 
-- CVE-2026-100401 — Rate Limit Bypass — Low
+- CVE-2026-100401 
 
 ### GHSA
 
-- GHSA-wr5q-7wwx-x568 — Authentication Bypass — Critical
+- GHSA-wr5q-7wwx-x568 
 
 
 
